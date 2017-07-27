@@ -1,18 +1,30 @@
 // ***** main colors *******
-$brand-color: #82d2e5;
+$brand-color: #3070d9;
+
+$b1: #3070d9;
+$b2: #3681f6; //hover
+$b3: #6dadf8;
+$b4: #b4d6fb;
+
+$g1: #53ae26;
+$g2: #65ce31; //hover
 
 // ***** text colors *******
 $text-color: #3f3f3f;
-$title-color: #c42e2e;
-$link-color: $brand-color;
-$link-color-hov: #ffa600;
+
+$link-color: #3681f6;
+$link-color-hov: #3681f6;
 
 // ===== fonts =====
-$font:            'OpenSans', sans-serif;
-$font-bold:       'OpenSans-Bold', sans-serif;
-$font-light:      'OpenSans-Light', sans-serif;
-$font-semibold:   'OpenSans-Semibold', sans-serif;
+$font:            'Akrobat-Regular', sans-serif;
+$font-black:      'Akrobat-Black', sans-serif;
+$font-bold:       'Akrobat-Bold', sans-serif;
+$font-extrabold:  'Akrobat-ExtraBold', sans-serif;
+$font-semibold:   'Akrobat-SemiBold', sans-serif;
+
+$font-os:          'OpenSans', sans-serif;
+$font-osb:         'OpenSans-Bold', sans-serif;
+$font-gilroy:      'Gilroy-ExtraBold', sans-serif;
 
 // ===== sizes =====
-$radius-button: 5px;
-$radius-tab: 5px;
+$br: 8px; // border-radius

@@ -10,7 +10,7 @@ body {
   padding: 0;
 }
 html {
-  font-family: $font;
+  font-family: $font-os;
   font-size: 16px;
   line-height: 1.38;
   color: $text-color;
@@ -41,31 +41,43 @@ p {
   margin: 0 0 10px 0;
 }
 h1 {
-  font-family: $font-bold;
-  font-size: 36px;
+  font-family: $font-black;
+  font-size: 48px;
+  color: #fff;
 }
 h2 {
-  font-family: $font-bold;
-  font-size: 32px;
+  font-family: $font-black;
+  font-size: 30px;
+  color: #615e76;
 }
 h3 {
-  font-family: $font-bold;
-  font-size: 28px;
+  font-family: $font-semibold;
+  font-size: 24px;
+  color: $b1;
 }
 h4 {
   font-family: $font-bold;
-  font-size: 24px;
+  font-size: 20px;
+  color: #494949;
 }
 h5 {
-  font-family: $font-bold;
-  font-size: 22px;
+  font-family: $font-black;
+  font-size: 18px;
+  color: $g2;
 }
 h6 {
-  font-family: $font-bold;
-  font-size: 20px;
+  font-family: $font;
+  font-size: 18px;
+  color: #494949;
 }
 p {
-  font-size: 16px;
+  font-family: $font-os;
+  font-size: 14px;
+  line-height: 1.28;
+  color: $text-color;
+  strong {
+    font-family: $font-osb;
+  }
 }
 a {
   transition: color .5s;
@@ -84,7 +96,7 @@ ul {
 ul {
   li {
     // путь к кастомной картинке пункта ul
-    // list-style-image: url('');
+    list-style-image: url('../img/ul.png');
   }
 }
 //кастомные пункты списка с цифрами
