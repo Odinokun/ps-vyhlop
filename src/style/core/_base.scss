@@ -11,7 +11,7 @@ body {
 }
 html {
   font-family: $font-os;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.38;
   color: $text-color;
 }
@@ -38,7 +38,7 @@ h5,
 h6,
 p {
   font-weight: 400;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
 }
 h1 {
   font-family: $font-black;
@@ -70,12 +70,13 @@ h5 {
 h6 {
   font-family: $font;
   font-size: 18px;
-  color: #494949;
+  color: #494949 !important;
 }
 p {
   font-family: $font-os;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.42;
+  margin-bottom: 15px;
   color: $text-color;
   strong {
     font-family: $font-osb;
@@ -91,8 +92,9 @@ a {
 }
 ol,
 ul {
+  margin: 0 0 15px 0;
   li {
-    padding: 3px 0;
+    padding: 0 0;
   }
 }
 ul {
@@ -134,18 +136,21 @@ textarea {
 }
 .main {
   position: relative;
+  z-index: 2;
   flex: 1 0 auto;
-  // padding-top: 110px;
+  margin-bottom: 450px;
+  background-color: #fff;
+  box-shadow: 0 10px 16px -10px rgba(24,83,195,.5);
 }
 .container,
 .container-sm {
   position: relative;
   width: 100%;
-  max-width: 1010px;
+  max-width: 1020px;
   margin: 0 auto;
 }
 .container {
-  padding: 15px;
+  padding: 20px;
 }
 .container-sm {
   padding: 0 15px;
@@ -174,7 +179,17 @@ textarea {
   background-color: $g1;
   box-shadow: 0 0 25px rgba(101, 206, 49, .3);
   &:hover {
-  color: #fff;
+    color: #fff;
     background-color: $g2;
+  }
+}
+
+.img {
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: $br;
+  img {
+    display: block;
+    width: 100%;
   }
 }
