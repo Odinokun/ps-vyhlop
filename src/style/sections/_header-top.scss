@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include max(860) {
+    display: none;
+  }
 }
 
 .header__logo {

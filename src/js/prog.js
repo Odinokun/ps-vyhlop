@@ -34,3 +34,10 @@ $(window).scroll(function(){
   // $('h1').css('transform', 'translateY('+($window.scrollTop() * .3)+'px)');
 });
 // end page-header parallax
+
+// begin mobile menu open/close
+  $('#burger label').on('click', function() {
+  $('.menu__nav').toggleClass('active');
+
+});
+// end mobile menu open/close

@@ -6,6 +6,11 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  z-index: 2;
+  @include max(860) {
+  padding-top: 120px;
+
+  }
 }
 .page-header__title {
   font-family: $font-black;
@@ -17,8 +22,16 @@
   padding: 0 30px;
   text-transform: uppercase;
   color: #fff;
+  @include max(760) {
+    font-size: 36px;
+    line-height: 50px;
+  }
   &::before,
   &::after {
+  @include max(760) {
+    height: 50px;
+    background-size: auto 100%;
+  }
     position: absolute;
     top: 0;
     width: 20px;

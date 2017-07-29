@@ -2,6 +2,12 @@
   width: 100%;
   max-width: 980px;
   margin: 0 auto -150px;
+
+  @include max(1000) {
+    max-width: 960px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 .contacts-sec__header {
   padding: 25px 0;
@@ -23,6 +29,7 @@
 .contacts-sec__banner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   padding: 30px 20px 20px 20px;
   border-radius: $br;
@@ -32,6 +39,17 @@
 }
 
 // BEGIN banner-left
+.contacts-sec__banner-left {
+  padding: 0 10px;
+
+  @include max(840) {
+    width: 50%;
+  }
+  @include max(540) {
+    width: 100%;
+    text-align: center;
+  }
+}
 .contacts-sec__banner-schedule,
 .contacts-sec__banner-copyright {
   font-family: $font-extrabold;
@@ -47,9 +65,19 @@
 
 // BEGIN banner-middle
 .contacts-sec__banner-middle {
-  padding: 0 20px;
+  padding: 0 10px;
+
+  @include max(840) {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+
+    order: 3;
+  }
 }
 .contacts-sec__banner-item {
+  display: inline-block;
+  min-width: 51%;
   margin-bottom: 20px;
   &:last-child {
     margin-bottom: 0;
@@ -92,6 +120,19 @@
 .contacts-sec__banner-right {
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
+
+  @include max(840) {
+    width: 50%;
+    max-width: 200px;
+  }
+  @include max(540) {
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 // BEGIN order button
 .contacts-sec__banner-order {
@@ -101,7 +142,7 @@
   align-items: center;
   height: 32px;
   margin-bottom: 20px;
-  padding: 0 20px 0 15px;
+  padding: 0 20px;
   transition: all .5s;
   text-decoration: none;
   text-transform: uppercase;
@@ -114,7 +155,7 @@
     fill: #fff;
     width: 19px;
     height: 19px;
-    margin-right: 7px;
+    margin-right: 13px;
   }
   &:hover {
     color: #fff;
@@ -144,6 +185,11 @@
   background-image: url('../img/proshift.png');
   background-repeat: no-repeat;
   background-position: 100% 50%;
+
+  @include max(540) {
+    display: inline-block;
+    text-align: center;
+  }
   a {
     font-family: $font;
     color: #fff;

@@ -1,6 +1,7 @@
 //begin menu
 section.menu
   .container
+    include ../elements/burger
     nav.menu__nav
       ul.menu__list
         li.menu__item
@@ -9,7 +10,9 @@ section.menu
           a(href="#").menu__link О нас
         li.menu__item.menu__item-parent
           a(href="#").menu__link Услуги
+          span.menu__link-plus
           ul.menu__sublist
+            span.back Назад
             li.menu__subitem
               a(href="#").menu__sublink Ремонт и замена глушителей
             li.menu__subitem
@@ -25,9 +28,11 @@ section.menu
 
         li.menu__item.menu__item-parent
           a(href="#").menu__link Магазин
+          span.menu__link-plus
           ul.menu__sublist
+            span.back Назад
             li.menu__subitem
-              a(href="#").menu__sublink Ремонт и замена глушителей
+              a(href="#").menu__sublink 2 Ремонт и замена глушителей
             li.menu__subitem
               a(href="#").menu__sublink Замена катализатора
             li.menu__subitem

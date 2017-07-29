@@ -1,5 +1,8 @@
 .inner__left {
   padding: 0 20px;
+  @include max(760) {
+    padding: 0;
+  }
 }
 .container__title {
   font-family: $font-black;

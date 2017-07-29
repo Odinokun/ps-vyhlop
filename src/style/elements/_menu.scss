@@ -10,6 +10,10 @@
     height: 1px;
     content: '';
     background-color: $b4;
+
+    @include max(860) {
+      display: none;
+    }
   }
   .container {
     display: flex;
@@ -22,12 +26,35 @@
 
 .menu__nav {
   flex: 1 0 auto;
+
+  @include max(860) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    margin-top: -100vh;
+    padding-top: 50px;
+    transition: margin-top .5s;
+    &.active {
+      margin-top: 0;
+    }
+  }
 }
 .menu__list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  @include max(860) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-top: 30px;
+    background-color: #fff;
+  }
 }
 .menu__item {
   padding: 0;
@@ -35,45 +62,33 @@
 }
 .menu__item-parent {
   position: relative;
+  display: flex;
+  align-items: center;
+
+  @include max(860) {
+    flex-wrap: wrap;
+  }
   .menu__link {
-    padding-right: 20px;
+    padding-right: 15px;
   }
   &:hover {
-    &::before,
-    &::after {
-      background-color: $g2;
+    @include min(861) {
+      .menu__sublist {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
-  }
-  &::before,
-  &::after {
-    position: absolute;
-    top: 2px;
-    bottom: 0;
-    display: block;
-    margin: auto;
-    content: '';
-    transition: background-color .5s;
-    background-color: #223b73;
-    box-shadow: 1px 1px 0  0 rgba(34, 59, 115, .2);
-  }
-  &::before {
-    right: 9px;
-    width: 1px;
-    height: 9px;
-  }
-  &::after {
-    right: 5px;
-    width: 9px;
-    height: 1px;
-  }
-  // сдвигаем подчеркивание влево на ширину плюсика
-  .menu__link {
-    &::before {
-      right: 20px;
-    }
-    &:hover {
+    .menu__link {
+      color: $g2;
       &::before {
-        width: calc(100% - 20px);
+        width: 100%;
+      }
+    }
+    // меняем цвет у крестика при наведении на пункт меню
+    .menu__link-plus {
+      &::before,
+      &::after {
+        background-color: $g2;
       }
     }
   }
@@ -87,6 +102,10 @@
   transition: all .5s;
   text-decoration: none;
   color: #223b73;
+
+  @include max(860) {
+    padding: 5px 0;
+  }
   &::before {
     position: absolute;
     right: 0;
@@ -101,12 +120,41 @@
   }
   &:hover {
     color: $g2;
+    &::before {
+      width: 100%;
+    }
+  }
+}
+.menu__link-plus {
+  position: relative;
+  display: block;
+  width: 9px;
+  height: 9px;
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    transition: background-color .5s;
+    background-color: #223b73;
+    box-shadow: 1px 1px 0  0 rgba(34, 59, 115, .2);
+  }
+  &::before {
+    top: 1px;
+    right: 9px;
+    width: 1px;
+    height: 9px;
+  }
+  &::after {
+    top: 5px;
+    right: 5px;
+    width: 9px;
+    height: 1px;
+  }
+  &:hover {
     & + .menu__sublist {
       transform: scale(1);
       opacity: 1;
-    }
-    &::before {
-      width: 100%;
     }
   }
 }
@@ -114,16 +162,44 @@
 // BEGIN subitem
 .menu__sublist {
   position: absolute;
-  top: calc(100% - 2px);
+  top: calc(100% - 3px);
   left: 0;
   padding: 20px 20px 15px 20px;
   transition: all .5s;
   transform: scale(0);
   opacity: 0;
   background-color: #201c3b;
+
+  @include max(860) {
+    position: fixed;
+    z-index: 10;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    padding-top: 0;
+    text-align: center;
+    background-color: #fff;
+  }
   &:hover {
     transform: scale(1);
     opacity: 1;
+  }
+  .back {
+    font-family: $font-semibold;
+    font-size: 18px;
+    position: absolute;
+    top: -27px;
+    right: 20px;
+    display: none;
+    text-transform: uppercase;
+    pointer-events: none;
+    color: #f00;
+
+    @include max(860) {
+      display: block;
+    }
   }
 }
 .menu__subitem {
@@ -138,6 +214,10 @@
   transition: color .5s;
   white-space: nowrap;
   color: #fff;
+
+  @include max(860) {
+    color: #223b73;
+  }
   &:hover {
     text-decoration: none;
     color: $g1;
@@ -160,6 +240,13 @@
   color: #fff;
   border-radius: $br;
   background-color: $g1;
+
+  @include max(860) {
+    position: relative;
+    z-index: 10;
+    margin-top: 3px;
+    margin-left: auto;
+  }
   svg {
     display: block;
     overflow: visible;
