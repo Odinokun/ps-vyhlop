@@ -1,12 +1,14 @@
 .breadcrumbs__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
   .breadcrumbs__item:last-child {
     .breadcrumbs__link {
       text-decoration: none;
       pointer-events: none;
+      color: #bcbcbc;
     }
   }
 }
@@ -14,9 +16,10 @@
   position: relative;
   list-style: none;
   &::after {
-    font-size: 12px;
-    margin: 0 3px 0 4px;
+    font-size: 15px;
+    margin: 0 5px 0 3px;
     content: '/';
+    color: #fff;
   }
   &:last-child {
     &::after {
@@ -25,10 +28,12 @@
   }
 }
 .breadcrumbs__link {
-  font-size: 12px;
+  font-family: $font;
+  font-size: 16px;
   white-space: nowrap;
-  color: #403549;
+  color: #fff;
   &:hover {
     text-decoration: none;
+    color: $b2;
   }
 }

@@ -27,3 +27,10 @@ function pageWidget(pages) {
 
 
 //====== Begin Programmer code ======
+
+// begin page-header parallax
+$(window).scroll(function(){
+  $('.parallax').css('background-position','center calc(50% + '+($(window).scrollTop()*0.4)+'px');
+  // $('h1').css('transform', 'translateY('+($window.scrollTop() * .3)+'px)');
+});
+// end page-header parallax

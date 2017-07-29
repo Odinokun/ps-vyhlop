@@ -16,70 +16,169 @@
   <body>
     <!-- begin header-->
     <header class="header">
-      <div class="container">
-        <h1>header</h1>
-        <p>
-          <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus harum quod debitis sint earum magnam in inventore non amet beatae eligendi a </strong>
-        </p>
-        <p>aspernatur corporis nulla vero quidem, possimus eum. Alias sapiente natus tenetur nam, doloribus voluptate eaque fuga ducimus, quae fugiat eum amet modi nihil earum. Aliquam consectetur aspernatur, iusto commodi aliquid assumenda quas tempora
-          placeat ducimus eligendi officia sint quia provident dolorem sed iure officiis quis ad a hic architecto rem, doloribus enim. Nesciunt aliquam dolorum quam, beatae fuga, iste expedita quisquam accusamus corrupti veniam, quo aspernatur, vel pariatur
-          qui hic. Magnam, incidunt hic repudiandae delectus quod rerum iure.</p>
+      <div class="header-top container-sm">
+        <a class="header__logo" href="#">
+          <img src="assets/img/logo.png" alt="Выхлоп.рф">
+          <span>Выхлоп.рф</span>
+        </a>
+        <a class="header__adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Нарвская</a>
+        <a class="header__adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Проспект Ветеранов</a>
+        <a class="header__phone" href="tel:+7 812 640 33 36">+7 (812) 640-33-36</a>
+        <div class="header-top__right">
+          <a class="header__basket" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#basket"></use>
+            </svg>
+          </a>
+          <a class="header__search" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#search"></use>
+            </svg>
+          </a>
+        </div>
       </div>
+      <!--begin menu-->
+      <section class="menu">
+        <div class="container">
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">О нас</a>
+              </li>
+              <li class="menu__item menu__item-parent">
+                <a class="menu__link" href="#">Услуги</a>
+                <ul class="menu__sublist">
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Ремонт и замена глушителей</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена катализатора</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка пламегасителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена гофры глушителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка сажевого фильтра</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Прямотоки, насадки, спортивный выхлоп</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item-parent">
+                <a class="menu__link" href="#">Магазин</a>
+                <ul class="menu__sublist">
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Ремонт и замена глушителей</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена катализатора</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка пламегасителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена гофры глушителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка сажевого фильтра</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Прямотоки, насадки, спортивный выхлоп</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Примеры работ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Вопрос-ответ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="menu__order" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#phone"> </use>
+            </svg>Заказать звонок</a>
+        </div>
+      </section>
+      <!--end   menu-->
     </header>
     <!-- end   header-->
+    <!-- begin page-header-->
+    <div class="page-header parallax" style="background-image: url('assets/img/page-header.jpg');">
+      <h1 class="page-header__title">Тюниг выхлопа</h1>
+      <!--begin breadcrumbs-->
+      <section class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Акции</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Тюниг выхлопа</a>
+          </li>
+        </ul>
+      </section>
+      <!--end   breadcrumbs-->
+    </div>
+    <!-- end   page-header-->
     <!--begin content-->
-    <section class="main">
-      <div class="container">
-        <div class="test-mixins" style="display:flex; justify-content: space-between;">
-          <div class="services__item" style="height: 100px; border: 1px solid #693;text-align:center;">
-            <div class="services__pic" style="background-image:url(assets/img/favicon.png); width:49px; height: 49px;display:inline-block;"></div>
-            <div class="services__icon"></div>
-            <h3 class="services__title">hello world 1</h3>
-            <a class="services__link" href="#"></a>
-          </div>
-          <div class="services__item" style="height: 100px; border: 1px solid #693;text-align:center;">
-            <div class="services__pic" style="background-image:url(assets/img/favicon.png); width:49px; height: 49px;display:inline-block;"></div>
-            <div class="services__icon"></div>
-            <h3 class="services__title">hello world 2</h3>
-            <a class="services__link" href="#"></a>
-          </div>
-          <div class="services__item" style="height: 100px; border: 1px solid #693;text-align:center;">
-            <div class="services__pic" style="background-image:url(assets/img/favicon.png); width:49px; height: 49px;display:inline-block;"></div>
-            <div class="services__icon"></div>
-            <h3 class="services__title">hello world 3</h3>
-            <a class="services__link" href="#"></a>
-          </div>
+    <section class="main inner">
+      <div class="container content__wrap">
+        <div class="inner__left">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio unde pariatur eius tenetur ea quibusdam quo labore quae ullam nostrum omnis assumenda atque sed perferendis recusandae incidunt sapiente, corporis voluptate.</p>
         </div>
-        <h1>Заголовок 1</h1>
-        <h2>Заголовок 2</h2>
-        <h3>Заголовок 3</h3>
-        <h4>Заголовок 4</h4>
-        <h5>Заголовок 5</h5>
-        <h6>Заголовок 6</h6>
-        <p>Повседневная практика показывает, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. С другой стороны сложившаяся структура организации
-          требуют от нас анализа направлений прогрессивного развития. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении
-          поставленных задач. Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.</p>
-        <p>Равным образом дальнейшее развитие различных форм деятельности играет важную роль в
-          <a href="#">формировании форм развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности требуют определения</a> прогрессивного развития. Товарищи! сложившаяся структура организации представляет собой
-          интересный эксперимент проверки модели развития. Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение форм развития. Разнообразный и богатый опыт реализация намеченных плановых заданий в значительной
-          степени обуславливает создание новых предложений.
-          <ol>
-            <li>Пункт 1</li>
-            <li>Пункт 2</li>
-            <li>Пункт 3</li>
-          </ol>
-          <ul>
-            <li>Пункт 1</li>
-            <li>Пункт 2</li>
-            <li>Пункт 3</li>
-          </ul>
-        </p>
+        <!--begin aside-->
+        <aside class="aside">
+          <div class="aside__item">
+            <div class="aside__item-pic" style="background-image:url('assets/img/aside-item-pic.jpg');">
+              <h4 class="aside__item-title">Насадки</h4>
+              <h5 class="aside__item-subtitle">
+                Большой выбор
+                <br>В НАЛИЧИИ </h5>
+            </div>
+            <a class="aside__item-btn btn-green" href="#">Подробнее</a>
+          </div>
+          <div class="aside__item">
+            <div class="aside__item-pic" style="background-image:url('assets/img/aside-item-pic.jpg');">
+              <h4 class="aside__item-title">Удалим катализатор</h4>
+              <h5 class="aside__item-subtitle">за 500р.</h5>
+            </div>
+            <a class="aside__item-btn btn-green" href="#">Подробнее</a>
+          </div>
+          <h3 class="aside__title">Товары для выхлопа</h3>
+          <div class="aside__product">
+            <div class="aside__product-pic--wrap">
+              <div class="aside__product-pic" style="background-image:url('assets/img/aside-product-pic.jpg');"></div>
+            </div>
+            <h4 class="aside__product-title">Насадка на глушитель d63мм NG-MT0103 (NEW GALAXY)</h4>
+            <div class="aside__product-price">Цена:
+              <span class="old-price">880р.</span>
+              <span class="new-price">800р.</span>
+            </div>
+            <a class="aside__product-btn" href="#">Все товары</a>
+          </div>
+        </aside>
+        <!--end   aside-->
       </div>
     </section>
     <!--end   content-->
     <!--begin footer-->
     <footer class="footer">
       <h1>footer</h1>
+      <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Прямо меня текстами большой обеспечивает своего всеми, они пояс решила не продолжил живет большого грамматики, правилами там строчка по всей первую!</p>
     </footer>
     <!--end   footer-->
     <script src="assets/js/foundation.js" defer></script>

@@ -1,0 +1,119 @@
+.aside {
+  flex: 1 0 240px;
+  padding: 0 0 0 20px;
+  // background-color: rgba(51,153,102,.3);
+}
+.aside__title {
+  font-family: $font-black;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #615e76;
+}
+
+//begin item
+.aside__item {
+  width: 100%;
+  width: 220px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+.aside__item-pic {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 140px;
+  margin-bottom: -17px;
+  padding-bottom: 5px;
+  border-radius: $br;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.aside__item-title {
+  font-family: $font-extrabold;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.aside__item-subtitle {
+  font-family: $font-extrabold;
+  font-size: 18px;
+  margin-bottom: 0;
+  color: #fff;
+}
+//end item
+
+//begin product
+.aside__product {
+  width: 220px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.aside__product-pic--wrap {
+  position: relative;
+  width: 220px;
+  height: 160px;
+  margin-bottom: 20px;
+  background-image: url('../img/aside-product-border.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.aside__product-pic {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: 0;
+  width: 190px;
+  height: 160px;
+  margin: auto;
+  border-radius: $br;
+}
+.aside__product-title {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.22;
+  margin-bottom: 5px;
+  letter-spacing: .24px;
+  color: #161530;
+}
+.aside__product-price {
+  font-family: $font-semibold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #161530;
+  .old-price {
+    font-family: $font-bold;
+  }
+  .new-price {
+    font-family: $font-bold;
+    color: $g2;
+  }
+}
+.aside__product-btn {
+  font-family: $font-extrabold;
+  font-size: 16px;
+  line-height: 28px;
+  display: inline-block;
+  height: 28px;
+  margin-bottom: 0;
+  padding: 0 35px;
+  transition: all .5s;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: $br;
+  background-color: $b2;
+  &:hover {
+    color: #fff;
+    background-color: $b3;
+    box-shadow: 0 0 10px rgba(54, 129, 246, .25);
+  }
+}
+//end product

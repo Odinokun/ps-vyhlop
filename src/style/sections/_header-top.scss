@@ -1,0 +1,77 @@
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  img {
+    display: block;
+  }
+  span {
+    line-height: 0;
+    display: block;
+    text-indent: -9999px;
+  }
+}
+
+.header__adress,
+.header__phone {
+  font-family: $font-semibold;
+  font-size: 20px;
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  &:hover {
+    color: $b2;
+  }
+}
+.header__adress {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  background-image: url('../img/metro.png');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  &:hover {
+    &::before {
+      width: 0;
+    }
+  }
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    bottom: 0;
+    left: 30px;
+    width: calc(100% - 30px);
+    height: 2px;
+    margin: auto;
+    content: '';
+    transition: all .5s;
+    background-color: #b4b4b9;
+  }
+}
+
+.header-top__right {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header__basket,
+.header__search {
+  line-height: 1;
+  text-decoration: none;
+  svg {
+    overflow: visible;
+    fill: #fff;
+    width: 27px;
+    height: 27px;
+    margin-left: 25px;
+    transition: fill .5s;
+    &:hover {
+      fill: $g2;
+    }
+  }
+}

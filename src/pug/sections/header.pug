@@ -1,8 +1,20 @@
 // begin header
 header.header
-  .container
-    h1 header
-    p  
-      strong Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus harum quod debitis sint earum magnam in inventore non amet beatae eligendi a 
-    p aspernatur corporis nulla vero quidem, possimus eum. Alias sapiente natus tenetur nam, doloribus voluptate eaque fuga ducimus, quae fugiat eum amet modi nihil earum. Aliquam consectetur aspernatur, iusto commodi aliquid assumenda quas tempora placeat ducimus eligendi officia sint quia provident dolorem sed iure officiis quis ad a hic architecto rem, doloribus enim. Nesciunt aliquam dolorum quam, beatae fuga, iste expedita quisquam accusamus corrupti veniam, quo aspernatur, vel pariatur qui hic. Magnam, incidunt hic repudiandae delectus quod rerum iure.
+  .header-top.container-sm
+    a(href="#").header__logo
+      img(src="assets/img/logo.png", alt="Выхлоп.рф")
+      span Выхлоп.рф
+    a(href="#" target="_blank" rel="nofollow noopener noreferrer").header__adress Нарвская
+    a(href="#" target="_blank" rel="nofollow noopener noreferrer").header__adress Проспект Ветеранов
+    a(href="tel:+7 812 640 33 36").header__phone +7 (812) 640-33-36
+    
+    .header-top__right
+      a(href="#").header__basket
+        svg
+          use(xlink:href="assets/img/sprite.svg#basket")
+      a(href="#").header__search
+        svg
+          use(xlink:href="assets/img/sprite.svg#search")
+
+  include ../elements/menu
 // end   header

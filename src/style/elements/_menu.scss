@@ -1,0 +1,175 @@
+.menu {
+  position: relative;
+  background-color: #fff;
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    left: 0;
+    display: block;
+    height: 1px;
+    content: '';
+    background-color: $b4;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.menu__nav {
+  flex: 1 0 auto;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.menu__item {
+  padding: 0;
+  list-style: none;
+}
+.menu__item-parent {
+  position: relative;
+  .menu__link {
+    padding-right: 20px;
+  }
+  &:hover {
+    &::before,
+    &::after {
+      background-color: $g2;
+    }
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    top: 2px;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    content: '';
+    transition: background-color .5s;
+    background-color: #223b73;
+    box-shadow: 1px 1px 0  0 rgba(34, 59, 115, .2);
+  }
+  &::before {
+    right: 9px;
+    width: 1px;
+    height: 9px;
+  }
+  &::after {
+    right: 5px;
+    width: 9px;
+    height: 1px;
+  }
+  // сдвигаем подчеркивание влево на ширину плюсика
+  .menu__link {
+    &::before {
+      right: 20px;
+    }
+    &:hover {
+      &::before {
+        width: calc(100% - 20px);
+      }
+    }
+  }
+}
+.menu__link {
+  font-family: $font;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 0;
+  transition: all .5s;
+  text-decoration: none;
+  color: #223b73;
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    margin: auto;
+    content: '';
+    transition: width .5s;
+    background-color: $g2;
+  }
+  &:hover {
+    color: $g2;
+    & + .menu__sublist {
+      transform: scale(1);
+      opacity: 1;
+    }
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+// BEGIN subitem
+.menu__sublist {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  padding: 20px 20px 15px 20px;
+  transition: all .5s;
+  transform: scale(0);
+  opacity: 0;
+  background-color: #201c3b;
+  &:hover {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.menu__subitem {
+  padding: 0;
+  list-style: none;
+}
+.menu__sublink {
+  font-family: $font;
+  font-size: 18px;
+  display: inline-block;
+  padding: 0 0 10px 0;
+  transition: color .5s;
+  white-space: nowrap;
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+    color: $g1;
+  }
+}
+// END subitem
+
+// BEGIN order button
+.menu__order {
+  font-family: $font-bold;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-left: 35px;
+  padding: 0 20px 1px 15px;
+  transition: all .5s;
+  text-decoration: none;
+  color: #fff;
+  border-radius: $br;
+  background-color: $g1;
+  svg {
+    display: block;
+    overflow: visible;
+    fill: #fff;
+    width: 19px;
+    height: 19px;
+    margin-right: 7px;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $g2;
+  }
+}
+// END order button

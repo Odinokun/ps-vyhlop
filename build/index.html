@@ -16,15 +16,102 @@
   <body>
     <!-- begin header-->
     <header class="header">
-      <div class="container">
-        <h1>header</h1>
-        <p>
-          <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus harum quod debitis sint earum magnam in inventore non amet beatae eligendi a </strong>
-        </p>
-        <p>aspernatur corporis nulla vero quidem, possimus eum. Alias sapiente natus tenetur nam, doloribus voluptate eaque fuga ducimus, quae fugiat eum amet modi nihil earum. Aliquam consectetur aspernatur, iusto commodi aliquid assumenda quas tempora
-          placeat ducimus eligendi officia sint quia provident dolorem sed iure officiis quis ad a hic architecto rem, doloribus enim. Nesciunt aliquam dolorum quam, beatae fuga, iste expedita quisquam accusamus corrupti veniam, quo aspernatur, vel pariatur
-          qui hic. Magnam, incidunt hic repudiandae delectus quod rerum iure.</p>
+      <div class="header-top container-sm">
+        <a class="header__logo" href="#">
+          <img src="assets/img/logo.png" alt="Выхлоп.рф">
+          <span>Выхлоп.рф</span>
+        </a>
+        <a class="header__adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Нарвская</a>
+        <a class="header__adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Проспект Ветеранов</a>
+        <a class="header__phone" href="tel:+7 812 640 33 36">+7 (812) 640-33-36</a>
+        <div class="header-top__right">
+          <a class="header__basket" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#basket"></use>
+            </svg>
+          </a>
+          <a class="header__search" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#search"></use>
+            </svg>
+          </a>
+        </div>
       </div>
+      <!--begin menu-->
+      <section class="menu">
+        <div class="container">
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">О нас</a>
+              </li>
+              <li class="menu__item menu__item-parent">
+                <a class="menu__link" href="#">Услуги</a>
+                <ul class="menu__sublist">
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Ремонт и замена глушителей</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена катализатора</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка пламегасителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена гофры глушителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка сажевого фильтра</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Прямотоки, насадки, спортивный выхлоп</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item-parent">
+                <a class="menu__link" href="#">Магазин</a>
+                <ul class="menu__sublist">
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Ремонт и замена глушителей</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена катализатора</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка пламегасителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена гофры глушителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка сажевого фильтра</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Прямотоки, насадки, спортивный выхлоп</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Примеры работ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Вопрос-ответ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="menu__order" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#phone"> </use>
+            </svg>Заказать звонок</a>
+        </div>
+      </section>
+      <!--end   menu-->
     </header>
     <!-- end   header-->
     <!--begin content-->
@@ -53,6 +140,7 @@
     <!--begin footer-->
     <footer class="footer">
       <h1>footer</h1>
+      <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Прямо меня текстами большой обеспечивает своего всеми, они пояс решила не продолжил живет большого грамматики, правилами там строчка по всей первую!</p>
     </footer>
     <!--end   footer-->
     <script src="assets/js/foundation.js" defer></script>

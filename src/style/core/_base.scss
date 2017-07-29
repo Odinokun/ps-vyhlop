@@ -43,11 +43,13 @@ p {
 h1 {
   font-family: $font-black;
   font-size: 48px;
+  text-transform: uppercase;
   color: #fff;
 }
 h2 {
   font-family: $font-black;
   font-size: 30px;
+  text-transform: uppercase;
   color: #615e76;
 }
 h3 {
@@ -133,23 +135,46 @@ textarea {
 .main {
   position: relative;
   flex: 1 0 auto;
+  // padding-top: 110px;
 }
-.container {
+.container,
+.container-sm {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1010px;
   margin: 0 auto;
-  padding: 15px 30px;
-
-  @include max(768) {
-    padding: 10px 20px;
-  }
-  @include max(425) {
-    padding: 10px;
-  }
 }
-.header,
-.page-header,
+.container {
+  padding: 15px;
+}
+.container-sm {
+  padding: 0 15px;
+}
+.content__wrap {
+  display: flex;
+}
+// .header,
+// .page-header,
 .footer {
   flex: 0 0 auto;
+}
+.btn-green {
+  font-family: $font-extrabold;
+  font-size: 18px;
+  line-height: 34px;
+  display: inline-block;
+  height: 34px;
+  margin-bottom: 0;
+  padding: 0 50px;
+  transition: background-color .5s;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: $br;
+  background-color: $g1;
+  box-shadow: 0 0 25px rgba(101, 206, 49, .3);
+  &:hover {
+  color: #fff;
+    background-color: $g2;
+  }
 }
