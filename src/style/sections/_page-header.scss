@@ -1,15 +1,16 @@
 .page-header {
   position: relative;
+  z-index: 2;
   min-height: 300px;
   padding-top: 150px;
   text-align: center;
+  background-color: #120f2e;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  z-index: 2;
-  @include max(860) {
-  padding-top: 120px;
 
+  @include max(860) {
+    padding-top: 120px;
   }
 }
 .page-header__title {
@@ -22,16 +23,13 @@
   padding: 0 30px;
   text-transform: uppercase;
   color: #fff;
+
   @include max(760) {
     font-size: 36px;
     line-height: 50px;
   }
   &::before,
   &::after {
-  @include max(760) {
-    height: 50px;
-    background-size: auto 100%;
-  }
     position: absolute;
     top: 0;
     width: 20px;
@@ -39,6 +37,11 @@
     content: '';
     background-image: url('../img/page-header-decore.png');
     background-repeat: no-repeat;
+
+    @include max(760) {
+      height: 50px;
+      background-size: auto 100%;
+    }
   }
   &::before {
     left: 0;

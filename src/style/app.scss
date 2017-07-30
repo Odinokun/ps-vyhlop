@@ -12,7 +12,7 @@
 @import 'elements/menu';
 // @import 'elements/pagination';
 // @import 'elements/popup';
-// @import 'elements/slickBase';
+@import 'elements/slickBase';
 // @import 'elements/stickyHeader';
 
 //section
@@ -21,6 +21,7 @@
 @import 'sections/header';
 @import 'sections/header-top';
 @import 'sections/page-header';
+@import 'sections/top-section';
 
 //pages
 @import 'pages/index';

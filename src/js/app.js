@@ -18,6 +18,10 @@ $(function() {
   // begin Slick slider
   // require('./modules/slick')();
   // end   Slick slider
+  
+  // begin Top slider
+  require('./modules/top-slider')();
+  // end   Top slider
 
   // begin Popup
   // require('./modules/popup')();
