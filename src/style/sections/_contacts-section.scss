@@ -29,19 +29,26 @@
 .contacts-sec__banner {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 100%;
   padding: 30px 20px 20px 20px;
   border-radius: $br;
   background-color: #0f0e43;
   background-image: url('../img/contact-section-banner.jpg');
   box-shadow: 0 0 21px rgba(127, 127, 127, .2);
+
+  @include max(840) {
+    flex-wrap: wrap;
+  }
 }
 
 // BEGIN banner-left
 .contacts-sec__banner-left {
+  flex: 1 0 300px;
   padding: 0 10px;
 
+  @include max(1000) {
+    flex: 1 0 230px;
+  }
   @include max(840) {
     width: 50%;
   }
@@ -120,6 +127,7 @@
 .contacts-sec__banner-right {
   display: flex;
   flex-direction: column;
+  flex: 1 0 200px;
   padding: 0 10px;
 
   @include max(840) {
