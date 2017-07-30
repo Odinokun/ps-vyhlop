@@ -1,0 +1,18 @@
+.models-sec {
+  .section__title {
+    padding: 15px 35px 5px 30px;
+    background-image: url('../img/models-icon.png');
+  }
+}
+.models-sec__slider {
+  margin: 0;
+  padding: 0;
+}
+.models-sec__item {
+  list-style: none;
+  padding: 0;
+  img {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
