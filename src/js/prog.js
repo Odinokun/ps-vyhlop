@@ -33,6 +33,10 @@ $(window).scroll(function(){
   $('.parallax').css('background-position','center calc(50% + '+($(window).scrollTop()*0.4)+'px');
   // $('h1').css('transform', 'translateY('+($window.scrollTop() * .3)+'px)');
 });
+$(window).scroll(function(){
+  $('.parallax1').css('background-position','center calc(-50% + '+($(window).scrollTop()*0.04)+'px');
+  // $('h1').css('transform', 'translateY('+($window.scrollTop() * .3)+'px)');
+});
 // end page-header parallax
 
 // begin mobile menu open/close
@@ -41,3 +45,10 @@ $(window).scroll(function(){
 
 });
 // end mobile menu open/close
+
+// var scene = document.getElementById('js-scene');
+// var parallax = new Parallax(scene);
+$(function() {
+  var scene2 = document.getElementById('guarantees-section__parallax');
+  var parallax = new Parallax(scene2);
+});

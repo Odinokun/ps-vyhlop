@@ -1,4 +1,5 @@
 .models-sec {
+  margin-bottom: 20px;
   .section__title {
     padding: 15px 35px 5px 30px;
     background-image: url('../img/models-icon.png');
@@ -9,8 +10,8 @@
   padding: 0;
 }
 .models-sec__item {
-  list-style: none;
   padding: 0;
+  list-style: none;
   img {
     max-width: 95%;
     margin: 0 auto;
