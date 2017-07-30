@@ -193,3 +193,18 @@ textarea {
     width: 100%;
   }
 }
+.section__header {
+  padding: 15px 0 25px 0;
+  text-align: center;
+}
+.section__title {
+  font-family: $font-extrabold;
+  font-size: 30px;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  color: #464f82;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
