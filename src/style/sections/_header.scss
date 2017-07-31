@@ -52,15 +52,15 @@
   transition: background-color .5s;
   border: none;
   border-radius: $br;
-  background-color: $g1;
+  background-color: $g2;
   &:hover {
-    background-color: $g2;
+    background-color: $g1;
   }
 }
 .header__search-svg {
   position: absolute;
   top: 8px;
-  right: 6px;
+  right: 7px;
   fill: #fff;
   width: 15px;
   height: 15px;

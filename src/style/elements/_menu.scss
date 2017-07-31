@@ -67,6 +67,10 @@
 
   @include max(860) {
     flex-wrap: wrap;
+    .menu__link {
+      padding-right: 25px !important;
+      padding-left: 25px;
+    }
   }
   .menu__link {
     padding-right: 15px;
@@ -130,6 +134,11 @@
   display: block;
   width: 9px;
   height: 9px;
+
+  @include max(860) {
+    width: 20px;
+    height: 20px;
+  }
   &::before,
   &::after {
     position: absolute;
@@ -144,12 +153,19 @@
     right: 9px;
     width: 1px;
     height: 9px;
+
+    @include max(860) {
+      top: 6px;
+    }
   }
   &::after {
     top: 5px;
     right: 5px;
     width: 9px;
     height: 1px;
+    @include max(860) {
+      top: 10px;
+    }
   }
   &:hover {
     & + .menu__sublist {
@@ -239,7 +255,8 @@
   text-transform: uppercase;
   color: #fff;
   border-radius: $br;
-  background-color: $g1;
+  background-color: $g2;
+  box-shadow: 0 0 25px rgba(101, 206, 49, .3);
 
   @include max(860) {
     position: relative;
@@ -257,7 +274,7 @@
   }
   &:hover {
     color: #fff;
-    background-color: $g2;
+    background-color: $g1;
   }
 }
 // END order button

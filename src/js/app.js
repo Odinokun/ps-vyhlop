@@ -7,17 +7,21 @@ $(function() {
   require('./modules/svg4everybody')();
   // end   require SVG for IE
 
+  // begin mobile menu
+  require('./modules/mobileMenu')();
+  // end   mobile menu
+
   // begin Chrome Smooth Scroll
   require('./modules/smoothScroll')();
   // end   Chrome Smooth Scroll
 
-  // begin Chrome Scroll2Ancor
-  // require('./modules/scroll2ancor')();
-  // end   Chrome Scroll2Ancor
+  // begin search in header
+  require('./modules/search')();
+  // end   search in header
   
-  // begin Slick slider
-  // require('./modules/slick')();
-  // end   Slick slider
+  // begin parallax in header
+  require('./modules/parallaxTop')();
+  // end   parallax in header
   
   // begin Top slider
   require('./modules/top-slider')();

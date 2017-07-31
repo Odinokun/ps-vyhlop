@@ -2,6 +2,7 @@ extends ../_template
 
 block variables
   - var title = 'Выхлоп.рф'
+  - var script = "$(function() {var scene2 = document.getElementById('guarantees-section__parallax');var parallax = new Parallax(scene2);});"
 
 block content
   include ../sections/header
@@ -33,3 +34,4 @@ block content
   //end   content
 
   include ../sections/footer
+

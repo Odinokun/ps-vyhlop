@@ -8,6 +8,7 @@ $(document).ready(function ($) {
     'newslist',
     'newsone',
     'servicelist',
+    'search',
     ]);
 });
 
@@ -30,36 +31,6 @@ function pageWidget(pages) {
 
 
 //====== Begin Programmer code ======
-
-// begin page-header parallax
-$(window).scroll(function(){
-  $('.parallax').css('background-position','center calc(50% + '+($(window).scrollTop()*0.4)+'px');
-  // $('h1').css('transform', 'translateY('+($window.scrollTop() * .3)+'px)');
-});
-$(window).scroll(function(){
-  $('.parallax1').css('background-position','center calc(-50% + '+($(window).scrollTop()*0.04)+'px');
-  // $('h1').css('transform', 'translateY('+($window.scrollTop() * .3)+'px)');
-});
-// end page-header parallax
-
-// begin mobile menu open/close
-$('#burger label').on('click', function() {
-  $('.menu__nav').toggleClass('active');
-});
-// end mobile menu open/close
-
-// begin search
-$('.header__search').on('click', function() {
-  $('.header__search-field').addClass('active');
-});
-// end search
-
-$(function() {
-  var scene2 = document.getElementById('guarantees-section__parallax');
-  var parallax = new Parallax(scene2);
-});
-
-
 // begin popup open
 $('.popup-open').on('click', function() {
   $('.popup, .popup__layer').fadeIn();

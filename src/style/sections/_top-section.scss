@@ -85,8 +85,13 @@
   background-position: 50% 50%;
   background-size: cover;
 
+  @include max(1024) {
+    min-height: 745px;
+    padding-top: 50px;
+  }
   @include max(1000) {
     min-height: 1065px;
+    padding-top: 100px;
     padding-bottom: 515px;
   }
   @include max(768) {
@@ -107,6 +112,9 @@
   text-transform: uppercase;
   color: #fff;
 
+  @include max(1024) {
+    font-size: 50px;
+  }
   @include max(768) {
     font-size: 40px;
   }
@@ -119,6 +127,9 @@
   font-size: 72px;
   color: #fff;
 
+  @include max(1024) {
+    font-size: 60px;
+  }
   @include max(768) {
     font-size: 55px;
   }
