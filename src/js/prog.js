@@ -5,6 +5,7 @@ $(document).ready(function ($) {
   pageWidget([
     'index',
     'inner',
+    'gallerylist',
     'newslist',
     'newsone',
     'servicelist',

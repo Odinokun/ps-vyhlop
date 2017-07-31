@@ -2,14 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @include max(860) {
-    display: none;
+    position: relative;
+    z-index: 10;
+    background-color: #19192c;
   }
 }
 
 .header__logo {
   img {
     display: block;
+    width: 100%;
+    height: auto;
   }
   span {
     line-height: 0;
@@ -36,6 +41,10 @@
   background-image: url('../img/metro.png');
   background-repeat: no-repeat;
   background-position: 0 50%;
+
+  @include max(860) {
+    display: none;
+  }
   &:hover {
     &::before {
       width: 0;
@@ -53,6 +62,29 @@
     content: '';
     transition: all .5s;
     background-color: #b4b4b9;
+  }
+}
+.header__phone {
+  @include max(480) {
+    line-height: 0;
+    margin-left: auto;
+    text-indent: -9999px;
+  }
+  svg {
+    display: none;
+    overflow: visible;
+    fill: #fff;
+    width: 27px;
+    height: 27px;
+    margin-left: 25px;
+    transition: fill .5s;
+
+    @include max(480) {
+      display: block;
+    }
+    &:hover {
+      fill: $g2;
+    }
   }
 }
 

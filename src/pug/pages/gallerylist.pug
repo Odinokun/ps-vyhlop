@@ -1,0 +1,55 @@
+extends ../_template
+
+block variables
+  - var title = 'Галереи'
+  - var pageHeaderTitle = 'Галереи'
+
+block content
+  include ../sections/header
+  include ../elements/popup
+
+  //begin content
+  section.main.gallerylist
+    include ../sections/page-header
+  
+    .container.content__wrap
+      .content__left
+        h2.content__title Нашу работу видно всегда
+
+        .gallerylist__wrap
+          .gallerylist__item
+            .gallerylist__pic(style="background-image:url('assets/img/gallerylist-01.jpg')")
+            h3.gallerylist__title Тюнинг выхлопа
+            p В данном альбоме собраны наши работы по тюнингу выхлопных систем различных моделей автомобилей, от простых, до эксклюзивных.
+            a(href="#").gallerylist__link
+
+          .gallerylist__item
+            .gallerylist__pic(style="background-image:url('assets/img/gallerylist-02.jpg')")
+            h3.gallerylist__title Ремонт выхлопных систем
+            p В данном альбоме собраны наши работы по тюнингу выхлопных систем различных моделей автомобилей, от простых, до эксклюзивных.
+            a(href="#").gallerylist__link
+
+          .gallerylist__item
+            .gallerylist__pic(style="background-image:url('assets/img/gallerylist-02.jpg')")
+            h3.gallerylist__title Ремонт выхлопных систем
+            p В данном альбоме собраны наши работы по тюнингу выхлопных систем различных моделей автомобилей, от простых, до эксклюзивных.
+            a(href="#").gallerylist__link
+
+          .gallerylist__item
+            .gallerylist__pic(style="background-image:url('assets/img/gallerylist-01.jpg')")
+            h3.gallerylist__title Тюнинг выхлопа
+            p В данном альбоме собраны наши работы по тюнингу выхлопных систем различных моделей автомобилей, от простых, до эксклюзивных.
+            a(href="#").gallerylist__link
+            
+
+
+
+      include ../elements/aside
+      
+    include ../elements/consult
+
+    include ../sections/contacts-section
+       
+  //end   content
+  
+  include ../sections/footer

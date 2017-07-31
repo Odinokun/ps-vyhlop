@@ -1,6 +1,6 @@
 .aside {
   flex: 1 0 240px;
-  padding: 0 0 0 20px;
+  padding: 7px 0 0 20px;
 
   @include max(840) {
     display: none;
