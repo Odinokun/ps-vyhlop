@@ -9,9 +9,10 @@
 .content__title {
   font-family: $font-black;
   font-size: 30px;
+  line-height: 1;
   position: relative;
   margin-bottom: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   text-transform: uppercase;
   color: #615e76;
   &::before,

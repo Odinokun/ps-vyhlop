@@ -7,6 +7,7 @@ $(document).ready(function ($) {
     'inner',
     'newslist',
     'newsone',
+    'servicelist',
     ]);
 });
 

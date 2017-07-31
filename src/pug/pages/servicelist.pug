@@ -1,0 +1,54 @@
+extends ../_template
+
+block variables
+  - var title = 'Услуги'
+  - var pageHeaderTitle = 'Услуги'
+
+block content
+  include ../sections/header
+  include ../elements/popup
+
+  //begin content
+  section.main.servicelist
+    include ../sections/page-header
+  
+    .container.content__wrap
+      .content__left
+        h2.content__title Новости и полезная информация
+
+        a(href="#").servicelist__item
+          .servicelist__pic(style="background-image:url('assets/img/newslist-item.jpg')")
+          .servicelist__text
+            h3.servicelist__title Поступление новых накладок
+            p Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития.  
+
+        a(href="#").servicelist__item
+          .servicelist__pic(style="background-image:url('assets/img/newslist-item.jpg')")
+          .servicelist__text
+            h3.servicelist__title Поступление новых накладок
+            p Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития.  
+
+        a(href="#").servicelist__item
+          .servicelist__pic(style="background-image:url('assets/img/newslist-item.jpg')")
+          .servicelist__text
+            h3.servicelist__title Поступление новых накладок
+            p Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития.  
+
+        a(href="#").servicelist__item
+          .servicelist__pic(style="background-image:url('assets/img/newslist-item.jpg')")
+          .servicelist__text
+            h3.servicelist__title Поступление новых накладок
+            p Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития.  
+
+        include ../elements/pagination
+
+      include ../elements/aside
+      
+    include ../sections/advantage-section
+    include ../elements/consult
+
+    include ../sections/contacts-section
+       
+  //end   content
+  
+  include ../sections/footer

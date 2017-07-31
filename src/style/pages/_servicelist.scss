@@ -1,0 +1,58 @@
+.servicelist {
+  .advantage-sec .container {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+.servicelist__item {
+  display: flex;
+  margin-bottom: 25px;
+  text-decoration: none;
+
+  @include max(540) {
+    flex-direction: column;
+  }
+  &:hover {
+    .servicelist__title {
+      text-decoration: none;
+      color: $b2;
+    }
+  }
+  p {
+    font-family: $font-os;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #3f3f3f;
+  }
+}
+.servicelist__pic {
+  flex: 0 0 200px;
+  height: 140px;
+  border-radius: $br;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include max(540) {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
+.servicelist__text {
+  padding-left: 20px;
+
+  flex-grow: 1;
+  @include max(540) {
+    padding-left: 0;
+  }
+}
+.servicelist__title {
+  font-family: $font-black;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 15px;
+  transition: .5s;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #615e76;
+}
