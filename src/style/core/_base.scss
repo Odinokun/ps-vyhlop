@@ -163,24 +163,36 @@ textarea {
 .footer {
   flex: 0 0 auto;
 }
-.btn-green {
+.btn-green,
+.btn-blue {
   font-family: $font-extrabold;
   font-size: 18px;
   line-height: 34px;
   display: inline-block;
   height: 34px;
   margin-bottom: 0;
-  padding: 0 50px;
+  padding: 0 40px;
   transition: background-color .5s;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   border-radius: $br;
+  &:hover {
+    color: #fff;
+  }
+}
+.btn-green {
   background-color: $g1;
   box-shadow: 0 0 25px rgba(101, 206, 49, .3);
   &:hover {
-    color: #fff;
     background-color: $g2;
+  }
+}
+.btn-blue {
+  background-color: $b3;
+  box-shadow: 0 0 10px rgba(54, 129, 246, .25);
+  &:hover {
+    background-color: $b2;
   }
 }
 
@@ -207,6 +219,7 @@ textarea {
   color: #0e0a30;
   background-repeat: no-repeat;
   background-position: 0 0;
+
   @include max(375) {
     font-size: 26px;
   }

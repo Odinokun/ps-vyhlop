@@ -11,6 +11,7 @@
   background-image: url('../img/example-bg.png');
   background-position: 50% 50%;
   background-size: 100% 100%;
+
   @include max(860) {
     margin-top: 0;
     padding: 0 20px;
@@ -52,4 +53,18 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+}
+.example-sec__btn {
+  margin-top: -20px;
+  margin-left: 10px;
+  text-align: center;
+
+  @include max(860) {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .btn-blue {
+    line-height: 40px;
+    height: 40px;
+  }
 }
