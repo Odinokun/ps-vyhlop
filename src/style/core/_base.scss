@@ -204,7 +204,10 @@ textarea {
   position: relative;
   display: inline-block;
   margin: 0;
-  color: #464f82;
+  color: #0e0a30;
   background-repeat: no-repeat;
   background-position: 0 0;
+  @include max(375) {
+    font-size: 26px;
+  }
 }

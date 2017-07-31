@@ -26,6 +26,10 @@ $(function() {
   // begin models slider
   require('./modules/models-slider')();
   // end   models slider
+  
+  // begin example slider
+  require('./modules/example-slider')();
+  // end   example slider
 
   // begin Popup
   // require('./modules/popup')();

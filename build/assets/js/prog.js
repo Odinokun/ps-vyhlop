@@ -46,8 +46,6 @@ $(window).scroll(function(){
 });
 // end mobile menu open/close
 
-// var scene = document.getElementById('js-scene');
-// var parallax = new Parallax(scene);
 $(function() {
   var scene2 = document.getElementById('guarantees-section__parallax');
   var parallax = new Parallax(scene2);
