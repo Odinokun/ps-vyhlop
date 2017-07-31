@@ -30,6 +30,10 @@ $(function() {
   // begin example slider
   require('./modules/example-slider')();
   // end   example slider
+  
+  // begin reviews slider
+  require('./modules/reviews-slider')();
+  // end   reviews slider
 
   // begin Popup
   // require('./modules/popup')();
