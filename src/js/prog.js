@@ -40,13 +40,32 @@ $(window).scroll(function(){
 // end page-header parallax
 
 // begin mobile menu open/close
-  $('#burger label').on('click', function() {
+$('#burger label').on('click', function() {
   $('.menu__nav').toggleClass('active');
-
 });
 // end mobile menu open/close
+
+// begin search
+$('.header__search').on('click', function() {
+  $('.header__search-field').addClass('active');
+});
+// end search
 
 $(function() {
   var scene2 = document.getElementById('guarantees-section__parallax');
   var parallax = new Parallax(scene2);
 });
+
+
+// begin popup open
+$('.popup-open').on('click', function() {
+  $('.popup, .popup__layer').fadeIn();
+  e.preventDefault();
+});
+// end   popup open
+
+// begin popup close
+$('.popup__layer').on('click', function() {
+  $('.popup, .popup__layer').fadeOut();
+});
+// end   popup close

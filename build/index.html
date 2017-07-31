@@ -35,6 +35,19 @@
               <use xlink:href="assets/img/sprite.svg#search"></use>
             </svg>
           </a>
+          <!-- begin поле поиска-->
+          <div class="header__search-field">
+            <form class="header__search-form">
+              <input class="header__search-input" type="search" name="" placeholder="Поиск по сайту">
+              <div class="header__search-submit--wrap">
+                <input class="header__search-submit" type="submit" name="" value="">
+                <svg class="header__search-svg">
+                  <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </form>
+          </div>
+          <!-- end поле поиска-->
         </div>
       </div>
       <!--begin menu-->
@@ -126,6 +139,19 @@
       <!--end   menu-->
     </header>
     <!-- end   header-->
+    <!--begin popup-->
+    <button class="popup-open">popup open</button>
+    <div class="popup__layer">
+      <div class="popup">
+        <div class="popup-inn">
+          <h3 class="popup__title">Сообщение отправлено</h3>
+          <p class="popup__text">Мы свяжемся с вами
+            <br>в течении 5 минут!</p>
+          <span class="popup__btn btn-green">Ок</span>
+        </div>
+      </div>
+    </div>
+    <!--end   popup-->
     <!--begin content-->
     <section class="main index">
       <!--begin top section-->
@@ -220,7 +246,7 @@
           <div class="consult-form__row">
             <input type="text" placeholder="Имя">
             <input type="text" placeholder="Телефон">
-            <input type="submit" value="Отправить">
+            <input class="popup-open" type="button" value="Отправить">
           </div>
         </form>
       </div>

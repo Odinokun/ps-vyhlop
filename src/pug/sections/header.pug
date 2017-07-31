@@ -16,5 +16,16 @@ header.header
         svg
           use(xlink:href="assets/img/sprite.svg#search")
 
+      // begin поле поиска
+      .header__search-field
+        form.header__search-form
+          input.header__search-input(type='search', name='', placeholder='Поиск по сайту')
+          .header__search-submit--wrap
+            input.header__search-submit(type='submit', name='', value='')
+            svg.header__search-svg
+              use(xlink:href="assets/img/sprite.svg#arrow")
+      // end поле поиска
+
+
   include ../elements/menu
 // end   header

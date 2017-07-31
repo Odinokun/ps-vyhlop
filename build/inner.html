@@ -35,6 +35,19 @@
               <use xlink:href="assets/img/sprite.svg#search"></use>
             </svg>
           </a>
+          <!-- begin поле поиска-->
+          <div class="header__search-field">
+            <form class="header__search-form">
+              <input class="header__search-input" type="search" name="" placeholder="Поиск по сайту">
+              <div class="header__search-submit--wrap">
+                <input class="header__search-submit" type="submit" name="" value="">
+                <svg class="header__search-svg">
+                  <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </form>
+          </div>
+          <!-- end поле поиска-->
         </div>
       </div>
       <!--begin menu-->
@@ -220,7 +233,7 @@
           <div class="consult-form__row">
             <input type="text" placeholder="Имя">
             <input type="text" placeholder="Телефон">
-            <input type="submit" value="Отправить">
+            <input class="popup-open" type="button" value="Отправить">
           </div>
         </form>
       </div>

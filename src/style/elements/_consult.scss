@@ -6,14 +6,12 @@
   background-image: url('../img/consult-form-wrap.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
   @include max(1000) {
-    background-image: none;
     max-width: 960px;
+    background-image: none;
   }
   &::before {
-  @include max(1000) {
-    display: none;
-  }
     position: absolute;
     top: 40px;
     left: -10px;
@@ -21,6 +19,10 @@
     height: 124px;
     content: '';
     background-color: #bcbcbc;
+
+    @include max(1000) {
+      display: none;
+    }
   }
   form {
     display: block;
@@ -35,9 +37,10 @@
     background-position: 50% 50%;
     background-size: cover;
     box-shadow: 0 0 18px rgba(113, 133, 201, .47);
+
     @include max(860) {
-      padding: 25px;
       margin-bottom: 0;
+      padding: 25px;
     }
   }
 }
@@ -57,10 +60,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-    @include max(760) {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+
+  @include max(760) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   input[type='text'] {
     font-family: $font;
     font-size: 21px;
@@ -78,7 +82,7 @@
       margin-bottom: 10px;
     }
   }
-  input[type='submit'] {
+  .popup-open {
     font-family: $font-bold;
     font-size: 22px;
     line-height: 35px;

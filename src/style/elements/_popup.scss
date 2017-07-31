@@ -14,12 +14,47 @@
   top: 50%;
   left: 50%;
   display: none;
-  width: 300px;
+  // width: 300px;
   padding: 50px 30px;
+  padding: 15px 15px 0 15px;
   transform: translate(-50%, -50%);
-  background-color: #369;
+  border: 2px solid #b4d6fb;
+  border-radius: $br;
+  background-color: transparent;
 }
-.popup__form {
-  display: flex;
-  flex-direction: column;
+.popup-inn {
+  position: relative;
+  margin-bottom: -15px;
+  text-align: center;
+  border-radius: $br;
+  background-color: #fff;
+  padding: 20px 40px 40px 40px;
+}
+.popup__title {
+  font-family: $font-extrabold;
+  font-size: 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #0e0a30;
+}
+.popup__text {
+  font-family: $font;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 0px;
+  color: #0e0a30;
+}
+.popup__btn {
+  font-family: $font-bold;
+  text-transform: uppercase;
+  font-size: 22px;
+  position: absolute;
+  bottom: -20px;
+  width: 170px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
 }

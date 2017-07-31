@@ -6,3 +6,65 @@
   left: 0;
   background-image: linear-gradient(to top, transparent 0%, #19192c 100%);
 }
+// BEGIN поле поиска
+.header__search-field {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 15px;
+  margin-top: -100px;
+  transition: margin-top .5s;
+  &.active {
+    margin-top: 0;
+  }
+}
+.header__search-form {
+  position: relative;
+  overflow: hidden;
+  overflow: hidden;
+  width: 100%;
+  max-width: 470px;
+  border-radius: $br;
+}
+.header__search-input {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 30px;
+  width: 320px;
+  height: 30px;
+  padding: 0 60px 0 15px;
+  color: #223b73;
+  border: none;
+}
+.header__search-submit--wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.header__search-submit {
+  width: 26px;
+  height: 26px;
+  margin-top: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+  transition: background-color .5s;
+  border: none;
+  border-radius: $br;
+  background-color: $g1;
+  &:hover {
+    background-color: $g2;
+  }
+}
+.header__search-svg {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  fill: #fff;
+  width: 15px;
+  height: 15px;
+  transition: opacity .5s;
+  pointer-events: none;
+}
+// END поле поиска
