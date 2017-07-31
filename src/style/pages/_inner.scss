@@ -1,10 +1,12 @@
-.inner__left {
+.content__left {
+  width: 100%;
   padding: 0 20px;
-  @include max(760) {
+
+  @include max(840) {
     padding: 0;
   }
 }
-.container__title {
+.content__title {
   font-family: $font-black;
   font-size: 30px;
   position: relative;

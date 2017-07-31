@@ -25,10 +25,10 @@
 .popup-inn {
   position: relative;
   margin-bottom: -15px;
+  padding: 20px 40px 40px 40px;
   text-align: center;
   border-radius: $br;
   background-color: #fff;
-  padding: 20px 40px 40px 40px;
 }
 .popup__title {
   font-family: $font-extrabold;
@@ -41,20 +41,20 @@
   font-family: $font;
   font-size: 24px;
   line-height: 1;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   color: #0e0a30;
 }
 .popup__btn {
   font-family: $font-bold;
-  text-transform: uppercase;
   font-size: 22px;
-  position: absolute;
-  bottom: -20px;
-  width: 170px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 40px;
   line-height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  left: 0;
+  width: 170px;
+  height: 40px;
+  margin: auto;
   cursor: pointer;
+  text-transform: uppercase;
 }

@@ -2,7 +2,7 @@
   flex: 1 0 240px;
   padding: 0 0 0 20px;
 
-  @include max(760) {
+  @include max(840) {
     display: none;
   }
 }

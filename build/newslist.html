@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Inner</title>
+    <title>Новости</title>
     <meta content="odinokun" name="author">
     <meta content="odinokun start template" name="description">
     <meta content="" name="keywords">
@@ -139,11 +139,24 @@
       <!--end   menu-->
     </header>
     <!-- end   header-->
+    <!--begin popup-->
+    <button class="popup-open">popup open</button>
+    <div class="popup__layer">
+      <div class="popup">
+        <div class="popup-inn">
+          <h3 class="popup__title">Сообщение отправлено</h3>
+          <p class="popup__text">Мы свяжемся с вами
+            <br>в течении 5 минут!</p>
+          <span class="popup__btn btn-green">Ок</span>
+        </div>
+      </div>
+    </div>
+    <!--end   popup-->
     <!--begin content-->
-    <section class="main inner">
+    <section class="main newslist">
       <!-- begin page-header-->
       <div class="page-header parallax" style="background-image: url('assets/img/page-header.jpg');">
-        <h1 class="page-header__title">Тюниг выхлопа</h1>
+        <h1 class="page-header__title">Новости</h1>
         <!--begin breadcrumbs-->
         <section class="breadcrumbs">
           <ul class="breadcrumbs__list">
@@ -154,55 +167,76 @@
               <a class="breadcrumbs__link" href="#">Акции</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Тюниг выхлопа</a>
+              <a class="breadcrumbs__link" href="#">Новости</a>
             </li>
           </ul>
         </section>
         <!--end   breadcrumbs-->
       </div>
       <!-- end   page-header-->
-      <!--begin popup-->
-      <button class="popup-open">popup open</button>
-      <div class="popup__layer">
-        <div class="popup">
-          <div class="popup-inn">
-            <h3 class="popup__title">Сообщение отправлено</h3>
-            <p class="popup__text">Мы свяжемся с вами
-              <br>в течении 5 минут!</p>
-            <span class="popup__btn btn-green">Ок</span>
-          </div>
-        </div>
-      </div>
-      <!--end   popup-->
       <div class="container content__wrap">
         <div class="content__left">
-          <h2 class="content__title">Красота и звук вашего авто</h2>
-          <p>
-            <strong>Значимость этих проблем настолько очевидна, </strong>что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение
-            <a href="#">форм развития. </a>Товарищи! постоянное
-            <a href="#">информационно-пропагандистское </a>обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
-          <h3>Заголовок 3 </h3>
-          <ol>
-            <li>Список 1</li>
-            <li>Список 1</li>
-            <li>Список 1</li>
-          </ol>
-          <h4>Заголовок 4</h4>
-          <ul>
-            <li>Спиcок 2 </li>
-            <li>Спиcок 2 </li>
-            <li>Спиcок 2 </li>
-          </ul>
-          <h5>Заголовок 5 </h5>
-          <p>Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития. </p>
-          <h6>Заголовок 6 </h6>
-          <p>Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития. </p>
-          <div class="img">
-            <img src="assets/img/inner.jpg" alt="picture">
-          </div>
-          <p>
-            <strong>Значимость этих проблем настолько очевидна, </strong>что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение форм развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей
-            деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+          <h2 class="content__title">Новости и полезная информация</h2>
+          <a class="newslist__item" href="#">
+            <div class="newslist__pic" style="background-image:url('assets/img/newslist-item.jpg');"></div>
+            <div class="newslist__text">
+              <h3 class="newslist__title">Поступление новых накладок</h3>
+              <span class="newslist__date">21.12.2017</span>
+              <p>Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют
+                от нас анализа дальнейших направлений развития. </p>
+            </div>
+          </a>
+          <a class="newslist__item" href="#">
+            <div class="newslist__pic" style="background-image:url('assets/img/newslist-item.jpg');"></div>
+            <div class="newslist__text">
+              <h3 class="newslist__title">Поступление новых накладок</h3>
+              <span class="newslist__date">21.12.2017</span>
+              <p>Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют
+                от нас анализа дальнейших направлений развития. </p>
+            </div>
+          </a>
+          <a class="newslist__item" href="#">
+            <div class="newslist__pic" style="background-image:url('assets/img/newslist-item.jpg');"></div>
+            <div class="newslist__text">
+              <h3 class="newslist__title">Поступление новых накладок</h3>
+              <span class="newslist__date">21.12.2017</span>
+              <p>Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют
+                от нас анализа дальнейших направлений развития. </p>
+            </div>
+          </a>
+          <a class="newslist__item" href="#">
+            <div class="newslist__pic" style="background-image:url('assets/img/newslist-item.jpg');"></div>
+            <div class="newslist__text">
+              <h3 class="newslist__title">Поступление новых накладок</h3>
+              <span class="newslist__date">21.12.2017</span>
+              <p>Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют
+                от нас анализа дальнейших направлений развития. </p>
+            </div>
+          </a>
+          <!--begin pagination-->
+          <section class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link active" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link inactive" href="#">...</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">12</a>
+              </li>
+              <li class="pagination__item active">
+                <a class="pagination__link" href="#">13</a>
+              </li>
+            </ul>
+          </section>
+          <!--end   pagination-->
         </div>
         <!--begin aside-->
         <aside class="aside">
