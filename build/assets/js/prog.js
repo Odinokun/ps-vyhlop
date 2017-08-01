@@ -3,6 +3,7 @@
 // закоментить перед prodaction
 $(document).ready(function ($) {
   pageWidget([
+    'basket',
     'index',
     'inner',
     'gallerylist',

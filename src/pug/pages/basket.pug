@@ -1,0 +1,84 @@
+extends ../_template
+
+block variables
+  - var title = 'Корзина'
+  - var pageHeaderTitle = 'Корзина'
+
+block content
+  include ../sections/header
+  include ../elements/popup
+
+  //begin content
+  section.main.basket
+    include ../sections/page-header
+  
+    .container.content__wrap
+      .content__left
+        h2.content__title Корзина
+
+        form.basket__form
+          .basket__item
+            .basket__pic(style="background-image:url('assets/img/basket.jpg')")
+            a(href="#").basket__title
+              |Насадка на глушитель d63мм NG-MT0103
+              br
+              |(NEW GALAXY)
+            .basket__item-price
+              |Цена:
+              span.old-price 880р.
+              span.new-price 800р.
+            .basket__item-counter
+              |Количество:
+              span.minus -
+              input(type='text', value='1')
+              span.plus +
+
+          .basket__item
+            .basket__pic(style="background-image:url('assets/img/basket.jpg')")
+            a(href="#").basket__title
+              |Насадка на глушитель d63мм NG-MT0103
+              br
+              |(NEW GALAXY)
+            .basket__item-price
+              |Цена:
+              span.old-price 880р.
+              span.new-price 800р.
+            .basket__item-counter
+              |Количество:
+              span.minus -
+              input(type='text', value='1')
+              span.plus +
+
+          .basket__result
+            h4.basket__result-pieces
+              |Товаров в корзине:
+              =" "
+              span 3
+            h4.basket__result-price
+              |Общая стоимость:
+              =" "
+              span 2400р.
+
+          .basket__btn-wrap
+            input(type="reset" value="Очистить корзину").basket__btn.basket__btn-clear
+            input(type="submit" value="Купить").basket__btn.basket__btn-pay
+
+        .basket__description
+          h2.basket__description-title Оплата и доставка
+
+          p Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют от нас анализа дальнейших направлений развития. 
+          p
+            strong Значимость этих проблем настолько очевидна, 
+            =" "
+            |что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение форм развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития. 
+
+
+      include ../elements/aside
+      
+    include ../elements/consult
+
+    include ../sections/contacts-section
+       
+  //end   content
+  
+  include ../sections/footer

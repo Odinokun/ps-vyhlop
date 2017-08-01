@@ -38,6 +38,10 @@ $(function() {
   // begin reviews slider
   require('./modules/reviews-slider')();
   // end   reviews slider
+  
+  // begin counter in basket
+  require('./modules/basketCounter')();
+  // end   counter in basket
 
   // begin Popup
   // require('./modules/popup')();
