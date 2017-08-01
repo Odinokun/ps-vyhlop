@@ -1,0 +1,107 @@
+extends ../_template
+
+block variables
+  - var title = 'Вопрос-ответ'
+  - var pageHeaderTitle = 'Вопрос-ответ'
+
+block content
+  include ../sections/header
+  include ../elements/popup
+
+  //begin content
+  section.main.faq
+    include ../sections/page-header
+  
+    .container.content__wrap
+      .content__left
+        h2.content__title Помогаем нашим клиентам
+
+        .faq__item
+          .faq__question
+            .faq__question-text
+              p Сегодня менял рулевую тягу сказать что я доволен-ничего не сказать! ребята все огромные молодцы настоящая команда быстро нашли неисправность заказали тягу поменяли пока меняли тягу я заметил небольшую грыжу на колесе- устранили профессионально! схождение сделанное на 5+! отдельное спасибо алексею шиномонтажнику! машина на дороге идт как вкопанная! теперь только к вам! спасибо!
+            h4.faq__question-signature
+              |Алексей, Mercedes C-class
+              span.faq__question-date 21.12.2017
+
+          .faq__answer
+            .faq__answer-text
+              p Алексей, большое спасибо за теплые слова! Будем стараться и далее радовать вас!
+            .faq__answer-signature
+              |Администрация ВЫХЛОП.РФ
+              span.faq__answer-date 25.12.2017
+
+        .faq__item
+          .faq__question
+            .faq__question-text
+              p Сегодня менял рулевую тягу сказать что я доволен-ничего не сказать! ребята все огромные молодцы настоящая команда быстро нашли неисправность заказали тягу поменяли пока меняли тягу я заметил небольшую грыжу на колесе- устранили профессионально! схождение сделанное на 5+! отдельное спасибо алексею шиномонтажнику! машина на дороге идт как вкопанная! теперь только к вам! спасибо!
+            h4.faq__question-signature
+              |Алексей, Mercedes C-class
+              span.faq__question-date 21.12.2017
+
+          .faq__answer
+            .faq__answer-text
+              p Алексей, большое спасибо за теплые слова! Будем стараться и далее радовать вас!
+            .faq__answer-signature
+              |Администрация ВЫХЛОП.РФ
+              span.faq__answer-date 25.12.2017
+
+        .faq__item
+          .faq__question
+            .faq__question-text
+              p Сегодня менял рулевую тягу сказать что я доволен-ничего не сказать! ребята все огромные молодцы настоящая команда быстро нашли неисправность заказали тягу поменяли пока меняли тягу я заметил небольшую грыжу на колесе- устранили профессионально! схождение сделанное на 5+! отдельное спасибо алексею шиномонтажнику! машина на дороге идт как вкопанная! теперь только к вам! спасибо!
+            h4.faq__question-signature
+              |Алексей, Mercedes C-class
+              span.faq__question-date 21.12.2017
+
+          .faq__answer
+            .faq__answer-text
+              p Алексей, большое спасибо за теплые слова! Будем стараться и далее радовать вас!
+            .faq__answer-signature
+              |Администрация ВЫХЛОП.РФ
+              span.faq__answer-date 25.12.2017
+
+        .faq__item
+          .faq__question
+            .faq__question-text
+              p Сегодня менял рулевую тягу сказать что я доволен-ничего не сказать! ребята все огромные молодцы настоящая команда быстро нашли неисправность заказали тягу поменяли пока меняли тягу я заметил небольшую грыжу на колесе- устранили профессионально! схождение сделанное на 5+! отдельное спасибо алексею шиномонтажнику! машина на дороге идт как вкопанная! теперь только к вам! спасибо!
+            h4.faq__question-signature
+              |Алексей, Mercedes C-class
+              span.faq__question-date 21.12.2017
+
+          .faq__answer
+            .faq__answer-text
+              p Алексей, большое спасибо за теплые слова! Будем стараться и далее радовать вас!
+            .faq__answer-signature
+              |Администрация ВЫХЛОП.РФ
+              span.faq__answer-date 25.12.2017
+
+        include ../elements/pagination
+
+
+        a(href="#").faq__vk
+          h3.faq__vk-title 
+            | Читайте больше
+            span в нашей группе вконтакте
+            |:
+          svg.faq__vk-arrow
+             use(xlink:href="assets/img/sprite.svg#right-arrow") 
+          svg.faq__vk-logo
+             use(xlink:href="assets/img/sprite.svg#vk") 
+
+        .faq__form
+          h2.faq__form-title Оставьте отзыв или задайте вопрос
+          form
+            input(type="text" placeholder="Имя").faq__form-input
+            input(type="text" placeholder="Марка авто").faq__form-input.error
+            textarea(placeholder="Ваш отзыв").faq__form-textarea
+            .faq__form-btn
+              input(type="button" value="Отправить").popup-open
+
+      include ../elements/aside
+      
+    include ../sections/contacts-section
+       
+  //end   content
+  
+  include ../sections/footer

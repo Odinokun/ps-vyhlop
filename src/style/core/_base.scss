@@ -128,6 +128,11 @@ input {
 textarea {
   resize: none;
 }
+input.error,
+textarea.error {
+  border-color: #ed1b24 !important;
+  background: #fbd1d3 !important;
+}
 //изменяем цвет выделения текста мышью
 ::selection {
   // background-color: $brand-color;

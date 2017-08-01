@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Вопрос-ответ</title>
+    <meta content="odinokun" name="author">
+    <meta content="odinokun start template" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- begin header-->
+    <header class="header">
+      <div class="header-top container-sm">
+        <a class="header__logo" href="#">
+          <img src="assets/img/logo.png" alt="Выхлоп.рф">
+          <span>Выхлоп.рф</span>
+        </a>
+        <a class="header__adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Нарвская</a>
+        <a class="header__adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Проспект Ветеранов</a>
+        <a class="header__phone" href="tel:+7 812 640 33 36">+7 (812) 640-33-36
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#phone"></use>
+          </svg>
+        </a>
+        <div class="header-top__right">
+          <a class="header__basket" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#basket"></use>
+            </svg>
+          </a>
+          <a class="header__search" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#search"></use>
+            </svg>
+          </a>
+          <!-- begin поле поиска-->
+          <div class="header__search-field">
+            <form class="header__search-form">
+              <input class="header__search-input" type="search" name="" placeholder="Поиск по сайту">
+              <div class="header__search-submit--wrap">
+                <input class="header__search-submit" type="submit" name="" value="">
+                <svg class="header__search-svg">
+                  <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </form>
+          </div>
+          <!-- end поле поиска-->
+        </div>
+      </div>
+      <!--begin menu-->
+      <section class="menu">
+        <div class="container">
+          <!--begin burger-->
+          <div class="burger" id="burger">
+            <input id="burger__input" name="exit" type="checkbox">
+            <label for="burger__input">
+              <span class="burger__icon"></span>
+            </label>
+          </div>
+          <!--end   burger-->
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">О нас</a>
+              </li>
+              <li class="menu__item menu__item-parent">
+                <a class="menu__link" href="#">Услуги</a>
+                <span class="menu__link-plus"></span>
+                <ul class="menu__sublist">
+                  <span class="back">Назад</span>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Ремонт и замена глушителей</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена катализатора</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка пламегасителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена гофры глушителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка сажевого фильтра</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Прямотоки, насадки, спортивный выхлоп</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item-parent">
+                <a class="menu__link" href="#">Магазин</a>
+                <span class="menu__link-plus"></span>
+                <ul class="menu__sublist">
+                  <span class="back">Назад</span>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">2 Ремонт и замена глушителей</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена катализатора</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка пламегасителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена гофры глушителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка сажевого фильтра</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Прямотоки, насадки, спортивный выхлоп</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Примеры работ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Вопрос-ответ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="menu__order" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#phone"> </use>
+            </svg>Заказать звонок</a>
+        </div>
+      </section>
+      <!--end   menu-->
+    </header>
+    <!-- end   header-->
+    <!--begin popup-->
+    <div class="popup__layer">
+      <div class="popup">
+        <div class="popup-inn">
+          <h3 class="popup__title">Сообщение отправлено</h3>
+          <p class="popup__text">Мы свяжемся с вами
+            <br>в течении 5 минут!</p>
+          <span class="popup__btn btn-green">Ок</span>
+        </div>
+      </div>
+    </div>
+    <!--end   popup-->
+    <!--begin content-->
+    <section class="main faq">
+      <!-- begin page-header-->
+      <div class="page-header parallax" style="background-image: url('assets/img/page-header.jpg');">
+        <h1 class="page-header__title">Вопрос-ответ</h1>
+        <!--begin breadcrumbs-->
+        <section class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Акции</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Вопрос-ответ</a>
+            </li>
+          </ul>
+        </section>
+        <!--end   breadcrumbs-->
+      </div>
+      <!-- end   page-header-->
+      <div class="container content__wrap">
+        <div class="content__left">
+          <h2 class="content__title">Помогаем нашим клиентам</h2>
+          <div class="faq__item">
+            <div class="faq__question">
+              <div class="faq__question-text">
+                <p>Сегодня менял рулевую тягу сказать что я доволен-ничего не сказать! ребята все огромные молодцы настоящая команда быстро нашли неисправность заказали тягу поменяли пока меняли тягу я заметил небольшую грыжу на колесе- устранили профессионально!
+                  схождение сделанное на 5+! отдельное спасибо алексею шиномонтажнику! машина на дороге идт как вкопанная! теперь только к вам! спасибо!</p>
+              </div>
+              <h4 class="faq__question-signature">Алексей, Mercedes C-class
+                <span class="faq__question-date">21.12.2017</span>
+              </h4>
+            </div>
+            <div class="faq__answer">
+              <div class="faq__answer-text">
+                <p>Алексей, большое спасибо за теплые слова! Будем стараться и далее радовать вас!</p>
+              </div>
+              <div class="faq__answer-signature">Администрация ВЫХЛОП.РФ
+                <span class="faq__answer-date">25.12.2017</span>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__question">
+              <div class="faq__question-text">
+                <p>Сегодня менял рулевую тягу сказать что я доволен-ничего не сказать! ребята все огромные молодцы настоящая команда быстро нашли неисправность заказали тягу поменяли пока меняли тягу я заметил небольшую грыжу на колесе- устранили профессионально!
+                  схождение сделанное на 5+! отдельное спасибо алексею шиномонтажнику! машина на дороге идт как вкопанная! теперь только к вам! спасибо!</p>
+              </div>
+              <h4 class="faq__question-signature">Алексей, Mercedes C-class
+                <span class="faq__question-date">21.12.2017</span>
+              </h4>
+            </div>
+            <div class="faq__answer">
+              <div class="faq__answer-text">
+                <p>Алексей, большое спасибо за теплые слова! Будем стараться и далее радовать вас!</p>
+              </div>
+              <div class="faq__answer-signature">Администрация ВЫХЛОП.РФ
+                <span class="faq__answer-date">25.12.2017</span>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__question">
+              <div class="faq__question-text">
+                <p>Сегодня менял рулевую тягу сказать что я доволен-ничего не сказать! ребята все огромные молодцы настоящая команда быстро нашли неисправность заказали тягу поменяли пока меняли тягу я заметил небольшую грыжу на колесе- устранили профессионально!
+                  схождение сделанное на 5+! отдельное спасибо алексею шиномонтажнику! машина на дороге идт как вкопанная! теперь только к вам! спасибо!</p>
+              </div>
+              <h4 class="faq__question-signature">Алексей, Mercedes C-class
+                <span class="faq__question-date">21.12.2017</span>
+              </h4>
+            </div>
+            <div class="faq__answer">
+              <div class="faq__answer-text">
+                <p>Алексей, большое спасибо за теплые слова! Будем стараться и далее радовать вас!</p>
+              </div>
+              <div class="faq__answer-signature">Администрация ВЫХЛОП.РФ
+                <span class="faq__answer-date">25.12.2017</span>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__question">
+              <div class="faq__question-text">
+                <p>Сегодня менял рулевую тягу сказать что я доволен-ничего не сказать! ребята все огромные молодцы настоящая команда быстро нашли неисправность заказали тягу поменяли пока меняли тягу я заметил небольшую грыжу на колесе- устранили профессионально!
+                  схождение сделанное на 5+! отдельное спасибо алексею шиномонтажнику! машина на дороге идт как вкопанная! теперь только к вам! спасибо!</p>
+              </div>
+              <h4 class="faq__question-signature">Алексей, Mercedes C-class
+                <span class="faq__question-date">21.12.2017</span>
+              </h4>
+            </div>
+            <div class="faq__answer">
+              <div class="faq__answer-text">
+                <p>Алексей, большое спасибо за теплые слова! Будем стараться и далее радовать вас!</p>
+              </div>
+              <div class="faq__answer-signature">Администрация ВЫХЛОП.РФ
+                <span class="faq__answer-date">25.12.2017</span>
+              </div>
+            </div>
+          </div>
+          <!--begin pagination-->
+          <section class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link active" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link inactive" href="#">...</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">12</a>
+              </li>
+              <li class="pagination__item active">
+                <a class="pagination__link" href="#">13</a>
+              </li>
+            </ul>
+          </section>
+          <!--end   pagination-->
+          <a class="faq__vk" href="#">
+            <h3 class="faq__vk-title">
+              Читайте больше
+              <span>в нашей группе вконтакте</span>:</h3>
+            <svg class="faq__vk-arrow">
+              <use xlink:href="assets/img/sprite.svg#right-arrow"> </use>
+            </svg>
+            <svg class="faq__vk-logo">
+              <use xlink:href="assets/img/sprite.svg#vk"> </use>
+            </svg>
+          </a>
+          <div class="faq__form">
+            <h2 class="faq__form-title">Оставьте отзыв или задайте вопрос</h2>
+            <form>
+              <input class="faq__form-input" type="text" placeholder="Имя">
+              <input class="faq__form-input error" type="text" placeholder="Марка авто">
+              <textarea class="faq__form-textarea" placeholder="Ваш отзыв"></textarea>
+              <div class="faq__form-btn">
+                <input class="popup-open" type="button" value="Отправить">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--begin aside-->
+        <aside class="aside">
+          <div class="aside__item">
+            <div class="aside__item-pic" style="background-image:url('assets/img/aside-item-pic.jpg');">
+              <h4 class="aside__item-title">Насадки</h4>
+              <h5 class="aside__item-subtitle">
+                Большой выбор
+                <br>В НАЛИЧИИ </h5>
+            </div>
+            <a class="aside__item-btn btn-green" href="#">Подробнее</a>
+          </div>
+          <div class="aside__item">
+            <div class="aside__item-pic" style="background-image:url('assets/img/aside-item-pic.jpg');">
+              <h4 class="aside__item-title">Удалим катализатор</h4>
+              <h5 class="aside__item-subtitle">за 500р.</h5>
+            </div>
+            <a class="aside__item-btn btn-green" href="#">Подробнее</a>
+          </div>
+          <h3 class="aside__title">Товары для выхлопа</h3>
+          <div class="aside__product">
+            <div class="aside__product-pic--wrap">
+              <div class="aside__product-pic" style="background-image:url('assets/img/aside-product-pic.jpg');"></div>
+            </div>
+            <h4 class="aside__product-title">Насадка на глушитель d63мм NG-MT0103 (NEW GALAXY)</h4>
+            <div class="aside__product-price">Цена:
+              <span class="old-price">880р.</span>
+              <span class="new-price">800р.</span>
+            </div>
+            <a class="aside__product-btn" href="#">Все товары</a>
+          </div>
+        </aside>
+        <!--end   aside-->
+      </div>
+      <!--begin contacts section-->
+      <section class="contacts-sec">
+        <header class="section__header">
+          <h2 class="section__title">Контакты</h2>
+        </header>
+        <div class="contacts-sec__banner">
+          <!-- begin banner-left-->
+          <div class="contacts-sec__banner-left">
+            <a class="contacts-sec__banner-logo" href="#">
+              <img src="assets/img/logo.png" alt="Выхлоп.рф">
+            </a>
+            <div class="contacts-sec__banner-schedule">Ежедневно с 10:00 до 21:00</div>
+            <div class="contacts-sec__banner-copyright">&#169; ВЫХЛОП.РФ, 2017</div>
+            <a class="contacts-sec__banner-pay" href="#">
+              <img src="assets/img/robokassa.png" alt="robokassa">
+            </a>
+          </div>
+          <!-- end banner-left-->
+          <!-- begin banner-middle-->
+          <div class="contacts-sec__banner-middle">
+            <div class="contacts-sec__banner-item">
+              <a class="contacts-sec__banner-metro" href="#" target="_blank" rel="nofollow noopener noreferrer">Нарвская</a>
+              <br>
+              <a class="contacts-sec__banner-adress" href="#" target="_blank" rel="nofollow noopener noreferrer">ул. Ивана Черных, 31, Санкт-Петербург, 198095</a>
+              <br>
+              <a class="contacts-sec__banner-phone" href="tel:+7 812 640 33 36">+7 (812) 640-33-36</a>
+            </div>
+            <div class="contacts-sec__banner-item">
+              <a class="contacts-sec__banner-metro" href="#" target="_blank" rel="nofollow noopener noreferrer">Проспект Ветеранов</a>
+              <br>
+              <a class="contacts-sec__banner-adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Брестский бульвар 9А, Санкт-Петербург, 198328</a>
+              <br>
+              <a class="contacts-sec__banner-phone" href="tel:+7 812 640 33 37">+7 (812) 640-33-37</a>
+            </div>
+          </div>
+          <!-- end banner-middle-->
+          <!-- begin banner-right-->
+          <div class="contacts-sec__banner-right">
+            <a class="contacts-sec__banner-order" href="#">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#phone"> </use>
+              </svg>Заказать звонок</a>
+            <a class="contacts-sec__banner-r-link" href="#">Политика конфиденциальности</a>
+            <a class="contacts-sec__banner-r-link" href="#">Пользовательское соглашение</a>
+            <a class="contacts-sec__banner-r-link" href="#">Как сделать заказ</a>
+            <a class="contacts-sec__banner-r-link" href="#">Доставка и оплата</a>
+            <div class="contacts-sec__banner-proshift">
+              <span>Сделано в</span>
+              <a href="#">Proshift</a>
+            </div>
+          </div>
+          <!-- end banner-right-->
+        </div>
+      </section>
+      <!--end   contacts section-->
+    </section>
+    <!--end   content-->
+    <!--begin footer-->
+    <div class="firefox-crutch"></div>
+    <footer class="footer">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6728.244318688649!2d30.307284556721942!3d59.91025294773979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1501339182541"
+        frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </footer>
+    <!--end   footer-->
+    <script src="assets/js/foundation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/prog.js"></script>
+    <script></script>
+  </body>
+</html>

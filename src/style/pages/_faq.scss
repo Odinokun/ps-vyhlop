@@ -1,0 +1,203 @@
+.faq__item {
+  margin-bottom: 30px;
+  @include max(540) {
+    margin-bottom: 60px;
+    
+  }
+}
+.faq__question {
+  margin-bottom: 20px;
+  padding: 23px 20px 10px 20px;
+  background-image: url('../img/faq-question.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  @include max(540) {
+    background-image: none;
+    padding: 0;
+  }
+}
+.faq__question-text {
+  p {
+    font-family: $font-os;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 5px;
+    color: #464f82;
+  }
+}
+.faq__question-signature {
+  font-family: $font-extrabold;
+  font-size: 18px;
+  margin-bottom: 0;
+  text-align: right;
+  letter-spacing: .25px;
+  color: #464f82;
+}
+.faq__question-date {
+  font-family: $font;
+  font-size: 16px;
+  margin-bottom: 0;
+  letter-spacing: .25px;
+  color: #464f82;
+}
+
+.faq__answer-text {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 20px 25px 3px 25px;
+  border-radius: $br;
+  background-color: #bddbfb;
+  &::before {
+    position: absolute;
+    bottom: -10px;
+    left: 65px;
+    width: 12px;
+    height: 15px;
+    content: '';
+    background-image: url('../img/faq-answer.png');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+  }
+  p {
+    font-family: $font-os;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #464f82;
+  }
+}
+.faq__answer-signature {
+  font-family: $font-extrabold;
+  font-size: 18px;
+  margin-bottom: 0;
+  letter-spacing: .25px;
+  color: #464f82;
+}
+.faq__answer-date {
+  font-family: $font;
+  font-size: 16px;
+  margin-bottom: 0;
+  letter-spacing: .25px;
+  color: #464f82;
+}
+
+// begin VK banner
+.faq__vk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  transition: all .5s;
+  text-decoration: none;
+  border-radius: $br;
+  background-color: $b2;
+  &:hover {
+    background-color: $b3;
+    box-shadow: 0 0 10px rgba(54, 129, 246, .25);
+  }
+  svg {
+    overflow: visible;
+    fill: #fff;
+    margin-left: 20px;
+  }
+}
+.faq__vk-title {
+  font-family: $font-black;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff;
+
+  @include max(940) {
+    font-size: 20px;
+  }
+  @include max(840) {
+    font-size: 24px;
+  }
+  @include max(680) {
+    font-size: 19px;
+  }
+  @include max(540) {
+    font-size: 24px;
+    span {
+      display: none;
+    }
+  }
+}
+.faq__vk-arrow {
+  width: 25px;
+  height: 20px;
+
+  @include max(540) {
+    display: none;
+  }
+}
+.faq__vk-logo {
+  width: 40px;
+  height: 22px;
+}
+// end VK banner
+
+// begin FAQ form
+.faq__form {
+  padding: 10px 0;
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .faq__form-input,
+  .faq__form-textarea {
+    font-family: $font;
+    font-size: 20px;
+    line-height: 1;
+    border: 1px solid #afafba;
+    border-radius: $br;
+
+    margin-bottom: 20px;
+    @include placeholder-color(#1e1e1e);
+    &:hover {
+      border-color: $g2;
+    }
+  }
+  .faq__form-input {
+    padding: 5px 20px 8px 20px;
+    width: 48.5%;
+    @include max(540) {
+      width: 100%;
+    }
+  }
+  .faq__form-textarea {
+    padding: 10px 20px 8px 20px;
+    width: 100%;
+    height: 135px;
+  }
+}
+.faq__form-title {
+  margin-bottom: 20px;
+}
+.faq__form-btn {
+  width: 100%;
+  text-align: center;
+    .popup-open {
+    font-family: $font-bold;
+    font-size: 22px;
+    line-height: 35px;
+    display: inline-block;
+    height: 40px;
+    padding: 0 50px;
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: $br;
+    background-color: $g2;
+    box-shadow: 0 0 25px rgba(101, 206, 49, .3);
+    &:hover {
+      color: #fff;
+      background-color: $g1;
+    }
+  }
+}
+// end FAQ form
