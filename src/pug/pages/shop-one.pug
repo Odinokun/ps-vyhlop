@@ -1,0 +1,100 @@
+extends ../_template
+
+block variables
+  - var title = 'Корзина'
+  - var pageHeaderTitle = 'Корзина'
+
+block content
+  include ../sections/header
+  include ../elements/popup
+
+  //begin content
+  section.main.shop-one
+    include ../sections/page-header
+  
+    header.shop-one__header
+      .container
+        h2.content__title Насадка на глушитель d63мм NG-MT0103 (NEW GALAXY)
+
+    .container.content__wrap
+      include ../elements/menu-shop
+
+      .content__right
+        .shop-one__card
+          ul.shop-one__slider#shop-one__slider
+            li
+              a(href="assets/img/example-slider/example-01.jpg" data-fancybox="gallery").shop-one__item
+                //- img(src="assets/img/example-slider/example-01.jpg", alt="image").shop-one__pic
+              .shop-one__pic(style="background-image:url('assets/img/example-slider/example-01.jpg')")
+            li
+              a(href="assets/img/example-slider/example-02.jpg" data-fancybox="gallery").shop-one__item
+                //- img(src="assets/img/example-slider/example-02.jpg", alt="image").shop-one__pic
+              .shop-one__pic(style="background-image:url('assets/img/example-slider/example-02.jpg')")
+            li
+              a(href="assets/img/example-slider/example-03.jpg" data-fancybox="gallery").shop-one__item
+                //- img(src="assets/img/example-slider/example-03.jpg", alt="image").shop-one__pic
+              .shop-one__pic(style="background-image:url('assets/img/example-slider/example-03.jpg')")
+
+          .shop-one__param
+            .shop-one__param-row
+              span
+                strong Материал:
+                =" "
+                |нержавеющая сталь
+            .shop-one__param-row
+              span
+                strong Диаметр:
+                =" "
+                |50 мм
+            .shop-one__param-row
+              span
+                strong Размер:
+                =" "
+                |155х75х80мм
+            .shop-one__param-row
+              span
+                strong Упаковка:
+                =" "
+                |блистер
+            .shop-one__param-row
+              span
+                strong Тип:
+                =" "
+                |насадка на глушитель
+            .shop-one__param-row
+              span
+                strong Артикул:
+                =" "
+                |62-1301
+            .shop-one__param-row
+              span
+                strong Код товара:
+                =" "
+                |00000100646
+            .shop-one__param-row
+              span
+                strong Торговая марка:
+                =" "
+                |TORINO
+
+            .shop-one__item-price
+              |Цена:
+              span.old-price 880р.
+              span.new-price 800р.
+            
+            .shop-one__btn-wrap
+              button.btn-green В корзину
+              button.btn-red Купить в один клик
+        
+        .shop-one__description
+          h3.shop-one__description-title Описание товара
+          p Роскошный внешний вид даже самого ухоженного и шикарного авто может быть мгновенно испорчен неопрятной трубой глушителя. В таком случае даже самый качественный тюнинг будет бессмыслен. Компания Prosport предлагает уникальный способ грамотно завершить рестайлинг автомобиля путем установки декоративной сверкающей насадки RS-04955 на трубу глушителя. Хромированная насадка на глушитель имеет большую длину по сравнению со штатной и делает экстерьер автомобиля более внушительным и агрессивным. Изделие выполнено из нержавеющей стали и имеет хромированное высокопрочное покрытие, подобным образом обуславливается сохранение внешних данных аксессуара в любых погодных условиях. 
+          p Производитель рекомендует осуществлять установку в условиях современного автосервиса с применением сварочных работ. Такой способ гарантирует абсолютно надежное закрепление насадки декоративной. Хромированная насадка на глушитель имеет овальную форму со скошенными вовнутрь краями. На поверхности имеется фирменный знак Prosport. Помимо высокого эстетического значения, насадка RS-04955 прекрасно поглощает шумы благодаря наличию во внутренней конструкции специальной мелкоячеистой накладки. Габариты насадки: длина - 178 мм, вход - Ø 58 мм, размеры овала – 102*80 мм.
+
+    include ../elements/consult
+
+    include ../sections/contacts-section
+       
+  //end   content
+  
+  include ../sections/footer

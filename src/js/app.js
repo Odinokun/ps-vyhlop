@@ -39,12 +39,16 @@ $(function() {
   require('./modules/reviews-slider')();
   // end   reviews slider
   
+  // begin shop one slider
+  require('./modules/shop-one-slider')();
+  // end   shop one slider
+  
   // begin counter in basket
   require('./modules/basketCounter')();
   // end   counter in basket
 
   // begin jqueryUI
-  require('./modules/jqueryUI')();
+  // require('./modules/jqueryUI')();
   // end   jqueryUI
 
   // begin Popup

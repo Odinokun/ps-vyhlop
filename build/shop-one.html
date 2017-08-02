@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Корзина</title>
+    <meta content="odinokun" name="author">
+    <meta content="odinokun start template" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- begin header-->
+    <header class="header">
+      <div class="header-top container-sm">
+        <a class="header__logo" href="#">
+          <img src="assets/img/logo.png" alt="Выхлоп.рф">
+          <span>Выхлоп.рф</span>
+        </a>
+        <a class="header__adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Нарвская</a>
+        <a class="header__adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Проспект Ветеранов</a>
+        <a class="header__phone" href="tel:+7 812 640 33 36">+7 (812) 640-33-36
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#phone"></use>
+          </svg>
+        </a>
+        <div class="header-top__right">
+          <a class="header__basket" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#basket"></use>
+            </svg>
+          </a>
+          <a class="header__search" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#search"></use>
+            </svg>
+          </a>
+          <!-- begin поле поиска-->
+          <div class="header__search-field">
+            <form class="header__search-form">
+              <input class="header__search-input" type="search" name="" placeholder="Поиск по сайту">
+              <div class="header__search-submit--wrap">
+                <input class="header__search-submit" type="submit" name="" value="">
+                <svg class="header__search-svg">
+                  <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </form>
+          </div>
+          <!-- end поле поиска-->
+        </div>
+      </div>
+      <!--begin menu-->
+      <section class="menu">
+        <div class="container">
+          <!--begin burger-->
+          <div class="burger" id="burger">
+            <input id="burger__input" name="exit" type="checkbox">
+            <label for="burger__input">
+              <span class="burger__icon"></span>
+            </label>
+          </div>
+          <!--end   burger-->
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">О нас</a>
+              </li>
+              <li class="menu__item menu__item-parent">
+                <a class="menu__link" href="#">Услуги</a>
+                <span class="menu__link-plus"></span>
+                <ul class="menu__sublist">
+                  <span class="back">Назад</span>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Ремонт и замена глушителей</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена катализатора</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка пламегасителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена гофры глушителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка сажевого фильтра</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Прямотоки, насадки, спортивный выхлоп</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item-parent">
+                <a class="menu__link" href="#">Магазин</a>
+                <span class="menu__link-plus"></span>
+                <ul class="menu__sublist">
+                  <span class="back">Назад</span>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">2 Ремонт и замена глушителей</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена катализатора</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка пламегасителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена гофры глушителя</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Замена и установка сажевого фильтра</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a class="menu__sublink" href="#">Прямотоки, насадки, спортивный выхлоп</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Примеры работ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Вопрос-ответ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="menu__order" href="#">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#phone"> </use>
+            </svg>Заказать звонок</a>
+        </div>
+      </section>
+      <!--end   menu-->
+    </header>
+    <!-- end   header-->
+    <!--begin popup-->
+    <div class="popup__layer">
+      <div class="popup">
+        <div class="popup-inn">
+          <h3 class="popup__title">Сообщение отправлено</h3>
+          <p class="popup__text">Мы свяжемся с вами
+            <br>в течении 5 минут!</p>
+          <span class="popup__btn btn-green">Ок</span>
+        </div>
+      </div>
+    </div>
+    <!--end   popup-->
+    <!--begin content-->
+    <section class="main shop-one">
+      <!-- begin page-header-->
+      <div class="page-header parallax" style="background-image: url('assets/img/page-header.jpg');">
+        <h1 class="page-header__title">Корзина</h1>
+        <!--begin breadcrumbs-->
+        <section class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Акции</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </section>
+        <!--end   breadcrumbs-->
+      </div>
+      <!-- end   page-header-->
+      <header class="shop-one__header">
+        <div class="container">
+          <h2 class="content__title">Насадка на глушитель d63мм NG-MT0103 (NEW GALAXY)</h2>
+        </div>
+      </header>
+      <div class="container content__wrap">
+        <!--begin menu-shop-->
+        <aside class="menu-shop">
+          <h2 class="menu-shop__title">Каталог</h2>
+          <ul class="menu-shop__list">
+            <li class="menu-shop__item active">
+              <a class="menu-shop__link" href="#">Все товары</a>
+            </li>
+            <li class="menu-shop__item">
+              <a class="menu-shop__link" href="#">Насадки спортивные</a>
+            </li>
+            <li class="menu-shop__item">
+              <a class="menu-shop__link" href="#">Насадки классические</a>
+            </li>
+            <li class="menu-shop__item">
+              <a class="menu-shop__link" href="#">Премиум насадки</a>
+            </li>
+            <li class="menu-shop__item">
+              <a class="menu-shop__link" href="#">Комплектующие для выхлопа</a>
+            </li>
+            <li class="menu-shop__item">
+              <a class="menu-shop__link" href="#">Резонаторы</a>
+            </li>
+            <li class="menu-shop__item">
+              <a class="menu-shop__link" href="#">Трубы</a>
+            </li>
+            <li class="menu-shop__item">
+              <a class="menu-shop__link" href="#">Аксессуары</a>
+            </li>
+          </ul>
+        </aside>
+        <!--end   menu-shop-->
+        <div class="content__right">
+          <div class="shop-one__card">
+            <ul class="shop-one__slider" id="shop-one__slider">
+              <li>
+                <a class="shop-one__item" href="assets/img/example-slider/example-01.jpg" data-fancybox="gallery"></a>
+                <div class="shop-one__pic" style="background-image:url('assets/img/example-slider/example-01.jpg');"></div>
+              </li>
+              <li>
+                <a class="shop-one__item" href="assets/img/example-slider/example-02.jpg" data-fancybox="gallery"></a>
+                <div class="shop-one__pic" style="background-image:url('assets/img/example-slider/example-02.jpg');"></div>
+              </li>
+              <li>
+                <a class="shop-one__item" href="assets/img/example-slider/example-03.jpg" data-fancybox="gallery"></a>
+                <div class="shop-one__pic" style="background-image:url('assets/img/example-slider/example-03.jpg');"></div>
+              </li>
+            </ul>
+            <div class="shop-one__param">
+              <div class="shop-one__param-row">
+                <span>
+                  <strong>Материал:</strong> нержавеющая сталь</span>
+              </div>
+              <div class="shop-one__param-row">
+                <span>
+                  <strong>Диаметр:</strong> 50 мм</span>
+              </div>
+              <div class="shop-one__param-row">
+                <span>
+                  <strong>Размер:</strong> 155х75х80мм</span>
+              </div>
+              <div class="shop-one__param-row">
+                <span>
+                  <strong>Упаковка:</strong> блистер</span>
+              </div>
+              <div class="shop-one__param-row">
+                <span>
+                  <strong>Тип:</strong> насадка на глушитель</span>
+              </div>
+              <div class="shop-one__param-row">
+                <span>
+                  <strong>Артикул:</strong> 62-1301</span>
+              </div>
+              <div class="shop-one__param-row">
+                <span>
+                  <strong>Код товара:</strong> 00000100646</span>
+              </div>
+              <div class="shop-one__param-row">
+                <span>
+                  <strong>Торговая марка:</strong> TORINO</span>
+              </div>
+              <div class="shop-one__item-price">Цена:
+                <span class="old-price">880р.</span>
+                <span class="new-price">800р.</span>
+              </div>
+              <div class="shop-one__btn-wrap">
+                <button class="btn-green">В корзину</button>
+                <button class="btn-red">Купить в один клик</button>
+              </div>
+            </div>
+          </div>
+          <div class="shop-one__description">
+            <h3 class="shop-one__description-title">Описание товара</h3>
+            <p>Роскошный внешний вид даже самого ухоженного и шикарного авто может быть мгновенно испорчен неопрятной трубой глушителя. В таком случае даже самый качественный тюнинг будет бессмыслен. Компания Prosport предлагает уникальный способ грамотно
+              завершить рестайлинг автомобиля путем установки декоративной сверкающей насадки RS-04955 на трубу глушителя. Хромированная насадка на глушитель имеет большую длину по сравнению со штатной и делает экстерьер автомобиля более внушительным
+              и агрессивным. Изделие выполнено из нержавеющей стали и имеет хромированное высокопрочное покрытие, подобным образом обуславливается сохранение внешних данных аксессуара в любых погодных условиях. </p>
+            <p>Производитель рекомендует осуществлять установку в условиях современного автосервиса с применением сварочных работ. Такой способ гарантирует абсолютно надежное закрепление насадки декоративной. Хромированная насадка на глушитель имеет овальную
+              форму со скошенными вовнутрь краями. На поверхности имеется фирменный знак Prosport. Помимо высокого эстетического значения, насадка RS-04955 прекрасно поглощает шумы благодаря наличию во внутренней конструкции специальной мелкоячеистой
+              накладки. Габариты насадки: длина - 178 мм, вход - Ø 58 мм, размеры овала – 102*80 мм.</p>
+          </div>
+        </div>
+      </div>
+      <!--begin consult form-->
+      <div class="container consult-form">
+        <form>
+          <h3 class="consult-form__title">оставьте заявку на бесплатную консультацию
+            <br>и получите
+            <span>скидку 10% </span>на работы</h3>
+          <div class="consult-form__row">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <input class="popup-open" type="button" value="Отправить">
+          </div>
+        </form>
+      </div>
+      <!--end   consult form-->
+      <!--begin contacts section-->
+      <section class="contacts-sec">
+        <header class="section__header">
+          <h2 class="section__title">Контакты</h2>
+        </header>
+        <div class="contacts-sec__banner">
+          <!-- begin banner-left-->
+          <div class="contacts-sec__banner-left">
+            <a class="contacts-sec__banner-logo" href="#">
+              <img src="assets/img/logo.png" alt="Выхлоп.рф">
+            </a>
+            <div class="contacts-sec__banner-schedule">Ежедневно с 10:00 до 21:00</div>
+            <div class="contacts-sec__banner-copyright">&#169; ВЫХЛОП.РФ, 2017</div>
+            <a class="contacts-sec__banner-pay" href="#">
+              <img src="assets/img/robokassa.png" alt="robokassa">
+            </a>
+          </div>
+          <!-- end banner-left-->
+          <!-- begin banner-middle-->
+          <div class="contacts-sec__banner-middle">
+            <div class="contacts-sec__banner-item">
+              <a class="contacts-sec__banner-metro" href="#" target="_blank" rel="nofollow noopener noreferrer">Нарвская</a>
+              <br>
+              <a class="contacts-sec__banner-adress" href="#" target="_blank" rel="nofollow noopener noreferrer">ул. Ивана Черных, 31, Санкт-Петербург, 198095</a>
+              <br>
+              <a class="contacts-sec__banner-phone" href="tel:+7 812 640 33 36">+7 (812) 640-33-36</a>
+            </div>
+            <div class="contacts-sec__banner-item">
+              <a class="contacts-sec__banner-metro" href="#" target="_blank" rel="nofollow noopener noreferrer">Проспект Ветеранов</a>
+              <br>
+              <a class="contacts-sec__banner-adress" href="#" target="_blank" rel="nofollow noopener noreferrer">Брестский бульвар 9А, Санкт-Петербург, 198328</a>
+              <br>
+              <a class="contacts-sec__banner-phone" href="tel:+7 812 640 33 37">+7 (812) 640-33-37</a>
+            </div>
+          </div>
+          <!-- end banner-middle-->
+          <!-- begin banner-right-->
+          <div class="contacts-sec__banner-right">
+            <a class="contacts-sec__banner-order" href="#">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#phone"> </use>
+              </svg>Заказать звонок</a>
+            <a class="contacts-sec__banner-r-link" href="#">Политика конфиденциальности</a>
+            <a class="contacts-sec__banner-r-link" href="#">Пользовательское соглашение</a>
+            <a class="contacts-sec__banner-r-link" href="#">Как сделать заказ</a>
+            <a class="contacts-sec__banner-r-link" href="#">Доставка и оплата</a>
+            <div class="contacts-sec__banner-proshift">
+              <span>Сделано в</span>
+              <a href="#">Proshift</a>
+            </div>
+          </div>
+          <!-- end banner-right-->
+        </div>
+      </section>
+      <!--end   contacts section-->
+    </section>
+    <!--end   content-->
+    <!--begin footer-->
+    <div class="firefox-crutch"></div>
+    <footer class="footer">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6728.244318688649!2d30.307284556721942!3d59.91025294773979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1501339182541"
+        frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </footer>
+    <!--end   footer-->
+    <script src="assets/js/foundation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/prog.js"></script>
+    <script></script>
+  </body>
+</html>

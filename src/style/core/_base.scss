@@ -142,8 +142,8 @@ textarea.error {
 .main {
   position: relative;
   z-index: 2;
-  padding-bottom: 1px;
   margin-bottom: 450px;
+  padding-bottom: 1px;
   background-color: #fff;
   box-shadow: 0 10px 16px -10px rgba(24,83,195,.5);
 }
@@ -170,6 +170,7 @@ textarea.error {
   // flex: 0 0 auto;
 }
 .btn-green,
+.btn-red,
 .btn-blue {
   font-family: $font-extrabold;
   font-size: 18px;
@@ -179,9 +180,11 @@ textarea.error {
   margin-bottom: 0;
   padding: 0 40px;
   transition: all .5s;
+  white-space: nowrap;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  border: none;
   border-radius: $br;
   &:hover {
     color: #fff;
@@ -199,6 +202,13 @@ textarea.error {
   &:hover {
     background-color: $b3;
     box-shadow: 0 0 10px rgba(54, 129, 246, .25);
+  }
+}
+.btn-red {
+  background-color: #e95656;
+  box-shadow: 0 0 15px rgba(232, 42, 42, .15);
+  &:hover {
+    background-color: #e82a2a;
   }
 }
 

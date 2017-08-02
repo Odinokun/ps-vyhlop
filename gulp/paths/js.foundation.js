@@ -12,5 +12,5 @@ module.exports = [
   './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
 
   // include jquery ui
-  './src/vendors/jquery-ui/jquery-ui.min.js',
+  // './src/vendors/jquery-ui/jquery-ui.min.js',
 ];

@@ -14,6 +14,7 @@ $(document).ready(function ($) {
     'servicelist',
     'search',
     'shop',
+    'shop-one',
     ]);
 });
 
@@ -48,4 +49,3 @@ $('.popup__layer').on('click', function() {
   $('.popup, .popup__layer').fadeOut();
 });
 // end   popup close
-
