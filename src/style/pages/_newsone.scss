@@ -10,12 +10,13 @@
 }
 .newsone__pic {
   position: relative;
-  height: 200px;
+  overflow: hidden;
   margin-bottom: 20px;
   border-radius: $br;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 .newsone__date {
   font-family: $font-black;

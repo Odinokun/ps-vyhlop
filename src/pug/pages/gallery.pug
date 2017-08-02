@@ -1,0 +1,55 @@
+extends ../_template
+
+block variables
+  - var title = 'Галереи'
+  - var pageHeaderTitle = 'Галереи'
+
+block content
+  include ../sections/header
+  include ../elements/popup
+
+  //begin content
+  section.main.gallery
+    include ../sections/page-header
+  
+    .container.content__wrap
+      .content__left
+        h2.content__title Тюнинг глушителей
+        .gallery__wrap
+          a(href="assets/img/example-slider/example-01.jpg" data-fancybox="gallery" data-caption="Тюнинг выхлопа Mazda RX7").gallery__item
+            .gallery__pic(style="background-image:url('assets/img/example-slider/example-01.jpg')")
+            span Тюнинг выхлопа Mazda RX7
+
+          a(href="assets/img/top-slider/slide-02.jpg" data-fancybox="gallery" data-caption="Тюнинг выхлопа Toyota GT86").gallery__item
+            .gallery__pic(style="background-image:url('assets/img/example-slider/example-02.jpg')")
+            span Тюнинг выхлопа Toyota GT86
+
+          a(href="assets/img/example-slider/example-03.jpg" data-fancybox="gallery" data-caption="Тюнинг выхлопа BMW E60").gallery__item
+            .gallery__pic(style="background-image:url('assets/img/example-slider/example-03.jpg')")
+            span Тюнинг выхлопа BMW E60
+          
+          a(href="assets/img/example-slider/example-01.jpg" data-fancybox="gallery" data-caption="Тюнинг выхлопа Mazda RX7").gallery__item
+            .gallery__pic(style="background-image:url('assets/img/example-slider/example-01.jpg')")
+            span Тюнинг выхлопа Mazda RX7
+
+          a(href="assets/img/example-slider/example-02.jpg" data-fancybox="gallery" data-caption="Тюнинг выхлопа Toyota GT86").gallery__item
+            .gallery__pic(style="background-image:url('assets/img/example-slider/example-02.jpg')")
+            span Тюнинг выхлопа Toyota GT86
+
+          a(href="assets/img/example-slider/example-03.jpg" data-fancybox="gallery" data-caption="Тюнинг выхлопа BMW E60").gallery__item
+            .gallery__pic(style="background-image:url('assets/img/example-slider/example-03.jpg')")
+            span Тюнинг выхлопа BMW E60
+          
+            
+
+
+
+      include ../elements/aside
+      
+    include ../elements/consult
+
+    include ../sections/contacts-section
+       
+  //end   content
+  
+  include ../sections/footer

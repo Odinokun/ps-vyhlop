@@ -6,6 +6,7 @@ $(document).ready(function ($) {
     'basket',
     'index',
     'inner',
+    'gallery',
     'gallerylist',
     'faq',
     'newslist',
@@ -46,3 +47,4 @@ $('.popup__layer').on('click', function() {
   $('.popup, .popup__layer').fadeOut();
 });
 // end   popup close
+
