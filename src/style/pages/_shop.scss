@@ -1,0 +1,145 @@
+.shop {
+  .content__wrap {
+    @include max(840) {
+      display: block;
+    }
+  }
+}
+.shop__header {
+  margin-bottom: -30px;
+  .container {
+    display: flex;
+    align-items: flex-end;
+
+    @include max(840) {
+      flex-wrap: wrap;
+    }
+  }
+}
+.shop__filter {
+  font-family: $font;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: auto;
+  color: #615e76;
+
+  @include max(840) {
+    width: 100%;
+  }
+  @include max(540) {
+    flex-wrap: wrap;
+  }
+  select {
+    font-size: 17px;
+    padding: 5px 10px 8px 10px;
+    transition: all .5s;
+    color: #615e76;
+    border: 1px solid $b4;
+    border-radius: $br;
+    outline: none;
+    background-color: #fff;
+  }
+}
+.shop__sort,
+.shop__quantity {
+  @include max(540) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+}
+.shop__sort-select,
+.shop__quantity-select {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 0 10px;
+  &:hover {
+    select {
+      border-color: $b2;
+    }
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    bottom: 0;
+    display: block;
+    width: 25px;
+    height: 19px;
+    margin: auto;
+    content: '';
+    pointer-events: none;
+    background-color: #fff;
+    background-image: url('../img/arr-down.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.shop__item {
+  position: relative;
+  min-height: 180px;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 230px;
+  border: 1px solid #bddbfb;
+  border-radius: $br;
+
+  @include max(580) {
+    padding: 200px 10px 10px 10px;
+  }
+  p {
+    font-family: $font-os;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #161530;
+  }
+}
+.shop__pic {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  width: 210px;
+  border-radius: $br;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include max(580) {
+    right: -1px;
+    width: auto;
+    max-height: 180px;
+  }
+}
+.shop__title {
+  font-family: $font;
+  font-size: 22px;
+  line-height: 1;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: color .5s;
+  text-decoration: none;
+  color: #161530;
+  &:hover {
+    color: $b2;
+  }
+}
+.shop__item-price {
+  font-family: $font-semibold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #161530;
+  .old-price {
+    font-family: $font-bold;
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: #e82a2a;
+  }
+  .new-price {
+    font-family: $font-black;
+    margin-left: 10px;
+    color: $b3;
+  }
+}

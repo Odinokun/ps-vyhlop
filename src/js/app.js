@@ -43,6 +43,10 @@ $(function() {
   require('./modules/basketCounter')();
   // end   counter in basket
 
+  // begin jqueryUI
+  require('./modules/jqueryUI')();
+  // end   jqueryUI
+
   // begin Popup
   // require('./modules/popup')();
   // end   Popup

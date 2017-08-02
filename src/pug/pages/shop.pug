@@ -1,0 +1,90 @@
+extends ../_template
+
+block variables
+  - var title = 'Корзина'
+  - var pageHeaderTitle = 'Корзина'
+
+block content
+  include ../sections/header
+  include ../elements/popup
+
+  //begin content
+  section.main.shop
+    include ../sections/page-header
+  
+    header.shop__header
+      .container
+        h2.content__title Товары для выхлопа
+
+        .shop__filter
+          .shop__sort
+            span Сортировать по:
+            .shop__sort-select
+              select
+                option Стоимости &#129093; 
+                option Стоимости &#129095; 
+                option Количеству &#129093;
+                option Количеству &#129095;
+
+          .shop__quantity
+            span Показывать:
+            .shop__quantity-select
+              select
+                option 40
+                option 20
+                option 10
+  
+    .container.content__wrap
+      include ../elements/menu-shop
+
+      .content__right
+
+        .shop__list
+          .shop__item
+            .shop__pic(style="background-image:url('assets/img/basket.jpg')")
+            a(href="#").shop__title
+              |Насадка на глушитель d63мм NG-MT0103
+              br
+              |(NEW GALAXY)
+            .shop__item-price
+              |Цена:
+              span.old-price 880р.
+              span.new-price 800р.
+            p Качественный тюнинг автомобиля вряд ли можно считать завершенным, если неопрятный внешний вид выхлопной трубы глушителя портит визуальное восприятие ухоженного и стильного авто. 
+            
+          .shop__item
+            .shop__pic(style="background-image:url('assets/img/basket.jpg')")
+            a(href="#").shop__title
+              |Насадка на глушитель d63мм NG-MT0103
+              br
+              |(NEW GALAXY)
+            .shop__item-price
+              |Цена:
+              span.old-price 880р.
+              span.new-price 800р.
+            p Качественный тюнинг автомобиля вряд ли можно считать завершенным, если неопрятный внешний вид выхлопной трубы глушителя портит визуальное восприятие ухоженного и стильного авто. 
+
+          .shop__item
+            .shop__pic(style="background-image:url('assets/img/basket.jpg')")
+            a(href="#").shop__title
+              |Насадка на глушитель d63мм NG-MT0103
+              br
+              |(NEW GALAXY)
+            .shop__item-price
+              |Цена:
+              span.old-price 880р.
+              span.new-price 800р.
+            p Качественный тюнинг автомобиля вряд ли можно считать завершенным, если неопрятный внешний вид выхлопной трубы глушителя портит визуальное восприятие ухоженного и стильного авто. 
+
+
+
+        include ../elements/pagination
+
+      
+    include ../elements/consult
+
+    include ../sections/contacts-section
+       
+  //end   content
+  
+  include ../sections/footer

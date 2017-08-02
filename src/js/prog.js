@@ -13,6 +13,7 @@ $(document).ready(function ($) {
     'newsone',
     'servicelist',
     'search',
+    'shop',
     ]);
 });
 
