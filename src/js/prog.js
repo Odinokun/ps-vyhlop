@@ -4,6 +4,7 @@
 $(document).ready(function ($) {
   pageWidget([
     'basket',
+    'contacts',
     'index',
     'inner',
     'gallery',

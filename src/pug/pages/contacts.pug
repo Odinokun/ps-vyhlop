@@ -1,0 +1,83 @@
+extends ../_template
+
+block variables
+  - var title = 'Поиск'
+  - var pageHeaderTitle = 'Поиск'
+
+block content
+  include ../sections/header
+  include ../elements/popup
+
+  //begin content
+  section.main.contacts
+    include ../sections/page-header
+
+    header.contacts__header
+      .container
+        h2.content__title Контактная информация
+
+    .contacts__metro
+      .contacts__metro-item
+        a(href="#" target="_blank" rel="nofollow noopener noreferrer").contacts__metro-title Нарвская
+        br
+        a(href="#" target="_blank" rel="nofollow noopener noreferrer").contacts__metro-adress ул. Ивана Черных, 31, Санкт-Петербург, 198095
+        br
+        a(href="tel:+7 812 640 33 36").contacts__metro-phone +7 (812) 640-33-36
+
+      .contacts__metro-item
+        a(href="#" target="_blank" rel="nofollow noopener noreferrer").contacts__metro-title Проспект Ветеранов
+        br
+        a(href="#" target="_blank" rel="nofollow noopener noreferrer").contacts__metro-adress Брестский бульвар 9А, Санкт-Петербург, 198328
+        br
+        a(href="tel:+7 812 640 33 37").contacts__metro-phone +7 (812) 640-33-37
+
+
+    .contacts__pluses.container
+      .contacts__pluses-item
+        .contacts__pluses-pic.clock
+        span.contacts__pluses-text
+          |Работаем ежедневно
+          br
+          |с 10:00 до 21:00
+
+      .contacts__pluses-item
+        .contacts__pluses-pic.card
+        span.contacts__pluses-text
+          |Наличный и безналичный расчет,
+          br
+          |банковские карты
+
+      .contacts__pluses-item
+        .contacts__pluses-pic.coffee
+        span.contacts__pluses-text
+          |Удобная клиентская комната
+          br
+          |с вкусным кофе
+
+
+    .contacts__map
+      script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AxSpZ_ZrPwRtOp4z1AELo0DPVvyQ2hSjR&amp;lang=ru_RU&amp;scroll=false")
+  
+    .contacts__departaments
+      .contacts__departaments-item
+        a(href="mailto:servise@jokerauto.ru") servise@jokerauto.ru
+        =" "
+        |- отдел сервиса
+
+      .contacts__departaments-item
+        a(href="mailto:zapchasti@jokerauto.ru") zapchasti@jokerauto.ru
+        =" "
+        |- отдел запчастей
+
+      .contacts__departaments-item
+        a(href="mailto:ok@jokerauto.ru") ok@jokerauto.ru
+        =" "
+        |- отдел качества
+    include ../elements/consult
+
+    include ../sections/contacts-section
+
+    script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AxSpZ_ZrPwRtOp4z1AELo0DPVvyQ2hSjR&amp;lang=ru_RU&amp;scroll=false")
+
+       
+  //end   content
