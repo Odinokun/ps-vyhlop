@@ -11,7 +11,21 @@
     content: '';
     background-color: $b4;
 
-    @include max(860) {
+    @include max(750) {
+      display: none;
+    }
+  }
+  &::after {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 1px;
+    content: '';
+    background-color: $b4;
+
+    @include max(750) {
       display: none;
     }
   }
@@ -27,7 +41,7 @@
 .menu__nav {
   flex: 1 0 auto;
 
-  @include max(860) {
+  @include max(750) {
     position: fixed;
     top: 0;
     right: 0;
@@ -43,12 +57,11 @@
 }
 .menu__list {
   display: flex;
-  // justify-content: space-between;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
 
-  @include max(860) {
+  @include max(750) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -58,16 +71,16 @@
   }
 }
 .menu__item {
+  margin-right: 30px;
   padding: 0;
   list-style: none;
-  margin-right: 30px;
 }
 .menu__item-parent {
   position: relative;
   display: flex;
   align-items: center;
 
-  @include max(860) {
+  @include max(750) {
     flex-wrap: wrap;
     .menu__link {
       padding-right: 25px !important;
@@ -75,10 +88,10 @@
     }
   }
   .menu__link {
-    padding-right: 15px;
+    // padding-right: 15px;
   }
   &:hover {
-    @include min(861) {
+    @include min(751) {
       .menu__sublist {
         transform: scale(1);
         opacity: 1;
@@ -109,7 +122,7 @@
   text-decoration: none;
   color: #223b73;
 
-  @include max(860) {
+  @include max(750) {
     padding: 5px 0;
   }
   &::before {
@@ -123,6 +136,10 @@
     content: '';
     transition: width .5s;
     background-color: $g2;
+
+    @include max(750) {
+      display: none;
+    }
   }
   &:hover {
     color: $g2;
@@ -137,7 +154,7 @@
   width: 9px;
   height: 9px;
 
-  @include max(860) {
+  @include max(750) {
     width: 20px;
     height: 20px;
   }
@@ -156,7 +173,7 @@
     width: 1px;
     height: 9px;
 
-    @include max(860) {
+    @include max(750) {
       top: 6px;
     }
   }
@@ -166,7 +183,7 @@
     width: 9px;
     height: 1px;
 
-    @include max(860) {
+    @include max(750) {
       top: 10px;
     }
   }
@@ -189,7 +206,7 @@
   opacity: 0;
   background-color: #201c3b;
 
-  @include max(860) {
+  @include max(750) {
     position: fixed;
     z-index: 10;
     top: 130px;
@@ -217,7 +234,7 @@
     pointer-events: none;
     color: #f00;
 
-    @include max(860) {
+    @include max(750) {
       display: block;
     }
   }
@@ -233,13 +250,13 @@
   padding: 0 0 10px 0;
   transition: color .5s;
   white-space: nowrap;
+  text-decoration: none;
   color: #fff;
 
-  @include max(860) {
+  @include max(750) {
     color: #223b73;
   }
   &:hover {
-    text-decoration: none;
     color: $g1;
   }
 }
@@ -262,7 +279,7 @@
   background-color: $g2;
   box-shadow: 0 0 25px rgba(101, 206, 49, .3);
 
-  @include max(860) {
+  @include max(750) {
     position: relative;
     z-index: 10;
     margin-top: 3px;

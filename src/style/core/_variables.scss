@@ -12,19 +12,31 @@ $g2: #65ce31; //hover
 // ***** text colors *******
 $text-color: #3f3f3f;
 
+$pur: #615e76;
+
 $link-color: $b2;
 $link-color-hov: $b2;
 
 // ===== fonts =====
-$font:            'Akrobat-Regular', sans-serif;
-$font-black:      'Akrobat-Black', sans-serif;
-$font-bold:       'Akrobat-Bold', sans-serif;
-$font-extrabold:  'Akrobat-ExtraBold', sans-serif;
-$font-semibold:   'Akrobat-SemiBold', sans-serif;
+// $font:            'Akrobat-Regular', sans-serif;
+// $font-black:      'Akrobat-Black', sans-serif;
+// $font-bold:       'Akrobat-Bold', sans-serif;
+// $font-extrabold:  'Akrobat-ExtraBold', sans-serif;
+// $font-semibold:   'Akrobat-SemiBold', sans-serif;
 
-$font-os:          'OpenSans', sans-serif;
-$font-osb:         'OpenSans-Bold', sans-serif;
-$font-gilroy:      'Gilroy-ExtraBold', sans-serif;
+// $font-os:          'OpenSans', sans-serif;
+// $font-osb:         'OpenSans-Bold', sans-serif;
+// $font-gilroy:      'Gilroy-ExtraBold', sans-serif;
+
+$font:            'PT Sans', sans-serif;
+$font-black:      'PT Sans Bold', sans-serif;
+$font-bold:       'PT Sans Bold', sans-serif;
+$font-extrabold:  'PT Sans Bold', sans-serif;
+$font-semibold:   'PT Sans Bold', sans-serif;
+
+$font-os:         'PT Sans', sans-serif;
+$font-osb:        'PT Sans Bold', sans-serif;
+$font-gilroy:     'PT Sans Bold', sans-serif;
 
 // ===== sizes =====
 $br: 8px; // border-radius

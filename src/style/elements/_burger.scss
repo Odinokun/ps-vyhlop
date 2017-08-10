@@ -10,7 +10,6 @@
   color: #223b73;
 }
 .burger {
-  // width: 130px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -22,7 +21,7 @@
   background-color: #fff;
   height: 50px;
   display: none;
-  @include max(860) {
+  @include max(750) {
     display: block !important;
   }
 }

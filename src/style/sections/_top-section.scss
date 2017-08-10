@@ -1,6 +1,5 @@
 .top-sec {
   position: relative;
-  margin-bottom: 55px;
   .slick-dotted.slick-slider {
     margin-bottom: 0;
   }
@@ -17,15 +16,12 @@
   .slick-prev,
   .slick-next {
     z-index: 1;
-    top: calc(50% - 150px);
+    top: calc(50% + 50px);
     width: 30px;
     height: 54px;
     background-image: url(../img/top-slider/arr.png);
     background-repeat: no-repeat;
 
-    @include max(1000) {
-      top: calc(50% - 250px);
-    }
     @include max(540) {
       display: none !important;
     }
@@ -53,14 +49,7 @@
     }
   }
   .slick-dots {
-    bottom: 330px;
-
-    @include max(1000) {
-      bottom: 530px;
-    }
-    @include max(540) {
-      bottom: 15px;
-    }
+    bottom: 10px;
     li {
       width: 16px;
       height: 16px;
@@ -77,28 +66,18 @@
   }
 }
 .top-sec__item {
-  min-height: 865px;
+  min-height: 450px;
   padding-top: 100px;
-  padding-bottom: 315px;
   list-style: none;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 
   @include max(1024) {
-    min-height: 745px;
-    padding-top: 50px;
-  }
-  @include max(1000) {
-    min-height: 1065px;
-    padding-top: 100px;
-    padding-bottom: 515px;
-  }
-  @include max(768) {
-    min-height: 950px;
+    min-height: 400px;
+    padding-top: 80px;
   }
   @include max(540) {
-    min-height: 450px;
     padding-bottom: 0;
   }
   .container {
@@ -107,16 +86,17 @@
 }
 .top-sec__title {
   font-family: $font-black;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 1;
+  margin-bottom: 0;
   text-transform: uppercase;
   color: #fff;
 
   @include max(1024) {
-    font-size: 50px;
+    font-size: 44px;
   }
   @include max(768) {
-    font-size: 40px;
+    font-size: 38px;
   }
   @include max(540) {
     font-size: 34px;
@@ -124,14 +104,14 @@
 }
 .top-sec__price {
   font-family: $font-black;
-  font-size: 72px;
+  font-size: 60px;
   color: #fff;
 
   @include max(1024) {
-    font-size: 60px;
+    font-size: 54px;
   }
   @include max(768) {
-    font-size: 55px;
+    font-size: 48px;
   }
   @include max(540) {
     font-size: 40px;
