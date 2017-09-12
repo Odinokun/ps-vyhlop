@@ -11,6 +11,8 @@ header.header
     
     .header-top__right
       a(href="#").header__basket
+        .header__basket-product
+          span 10
         svg
           use(xlink:href="assets/img/sprite.svg#basket")
       a(href="#").header__search
@@ -25,6 +27,7 @@ header.header
             input.header__search-submit(type='submit', name='', value='')
             svg.header__search-svg
               use(xlink:href="assets/img/sprite.svg#arrow")
+        .header__search-form-close
       // end поле поиска
 
 

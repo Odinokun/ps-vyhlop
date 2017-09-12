@@ -50,3 +50,22 @@ $('.popup__layer').on('click', function() {
   $('.popup, .popup__layer').fadeOut();
 });
 // end   popup close
+
+// begin basket counter
+$(function() {
+  $(".minus").click(function() {
+    var $input = $(this).parent().find("input");
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $(".plus").click(function() {
+    var $input = $(this).parent().find("input");
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
+});
+// end basket counter

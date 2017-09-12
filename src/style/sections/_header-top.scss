@@ -41,6 +41,7 @@
   background-image: url('../img/metro.png');
   background-repeat: no-repeat;
   background-position: 0 50%;
+  background-size: contain;
 
   @include max(1000) {
     display: none;
@@ -66,6 +67,7 @@
 }
 .header__phone {
   font-size: 16px;
+
   @include max(540) {
     line-height: 0;
     margin-left: auto;
@@ -98,6 +100,7 @@
 .header__basket,
 .header__search {
   line-height: 1;
+  position: relative;
   text-decoration: none;
   svg {
     overflow: visible;
@@ -109,5 +112,22 @@
     &:hover {
       fill: $g2;
     }
+  }
+}
+.header__basket-product {
+  position: absolute;
+  top: -3px;
+  right: -13px;
+  background-color: #ed3849;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  span {
+  line-height: 18px;
+  color:#fff;
+  font-size: 10px;
   }
 }

@@ -77,6 +77,9 @@
   height: 160px;
   margin: auto;
   border-radius: $br;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .aside__product-title {
   font-family: $font;

@@ -21,7 +21,7 @@
   background-color: #fff;
   height: 50px;
   display: none;
-  @include max(750) {
+  @include max(800) {
     display: block !important;
   }
 }
