@@ -5,7 +5,7 @@ module.exports = function() {
     dots: true,
     infinite: true,
     speed: 500,
-    fade: true,
+    // fade: true,
     autoplay: true,
     cssEase: 'linear'
   });
