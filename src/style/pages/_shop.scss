@@ -48,7 +48,6 @@
     width: 100%;
     margin-bottom: 10px;
   }
-  
 }
 .shop__sort-select,
 .shop__quantity-select {
@@ -98,19 +97,26 @@
 }
 .shop__pic {
   position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
+  top: 0;
+  bottom: 0;
+  left: 0;
   width: 210px;
   border-radius: $br;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
 
   @include max(580) {
     right: -1px;
     width: auto;
     max-height: 180px;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
 .shop__title {
@@ -141,5 +147,16 @@
     font-family: $font-black;
     margin-left: 10px;
     color: $b3;
+  }
+}
+.shop-item__btn-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

@@ -30,9 +30,9 @@
 
 // BEGIN banner-left
 .contacts-sec__banner-left {
-  flex: 1 0 300px;
   padding: 0 10px;
 
+  flex: 1 0 300px;
   @include max(1000) {
     flex: 1 0 230px;
   }
@@ -42,6 +42,12 @@
   @include max(540) {
     width: 100%;
     text-align: center;
+  }
+}
+.contacts-sec__banner-logo {
+  img {
+    width: 100%;
+    max-width: 185px;
   }
 }
 .contacts-sec__banner-schedule,
@@ -114,9 +120,9 @@
 .contacts-sec__banner-right {
   display: flex;
   flex-direction: column;
-  flex: 1 0 200px;
   padding: 0 10px;
 
+  flex: 1 0 200px;
   @include max(840) {
     width: 50%;
     max-width: 200px;
@@ -132,6 +138,7 @@
 // BEGIN order button
 .contacts-sec__banner-order {
   font-family: $font-bold;
+  font-size: 13px;
   line-height: 32px;
   display: flex;
   align-items: center;
@@ -142,17 +149,17 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  font-size: 13px;
   border-radius: $br;
   background-color: $g2;
   box-shadow: 0 0 25px rgba(101, 206, 49, .3);
   svg {
     display: block;
     overflow: visible;
-    fill: #fff;
     width: 19px;
     height: 19px;
     margin-right: 13px;
+
+    fill: #fff;
   }
   &:hover {
     color: #fff;

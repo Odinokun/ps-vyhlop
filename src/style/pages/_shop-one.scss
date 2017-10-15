@@ -51,9 +51,12 @@
   width: 280px;
   min-height: 240px;
   border-radius: $br;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  //background-size: cover;
+  background-size: contain;
 }
+
 .shop-one__param {
   width: 100%;
   padding-left: 30px;
@@ -84,8 +87,8 @@
 }
 .shop-one__btn-wrap {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   max-width: 390px;
   .btn-green {

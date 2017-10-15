@@ -12,14 +12,14 @@
 }
 .basket__pic {
   position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
+  top: 0;
+  bottom: 0;
+  left: 0;
   width: 210px;
   border-radius: $br;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
 
   @include max(580) {
     right: -1px;
@@ -108,8 +108,8 @@
 
 .basket__result {
   display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
+  justify-content: flex-end;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 2px solid #bddbfb;
@@ -131,8 +131,8 @@
 
 .basket__btn-wrap {
   display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
+  justify-content: flex-end;
   margin-bottom: 20px;
 }
 .basket__btn {

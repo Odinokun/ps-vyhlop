@@ -40,8 +40,9 @@ block content
       .content__right
 
         .shop__list
-          .shop__item
+          form.shop__item
             .shop__pic(style="background-image:url('assets/img/basket.jpg')")
+              a(href="#")
             a(href="#").shop__title
               |Насадка на глушитель d63мм NG-MT0103
               br
@@ -50,22 +51,30 @@ block content
               |Цена:
               span.old-price 880р.
               span.new-price 800р.
-            p Качественный тюнинг автомобиля вряд ли можно считать завершенным, если неопрятный внешний вид выхлопной трубы глушителя портит визуальное восприятие ухоженного и стильного авто. 
-            
-          .shop__item
-            .shop__pic(style="background-image:url('assets/img/basket.jpg')")
-            a(href="#").shop__title
-              |Насадка на глушитель d63мм NG-MT0103
-              br
-              |(NEW GALAXY)
-            .shop__item-price
-              |Цена:
-              span.old-price 880р.
-              span.new-price 800р.
-            p Качественный тюнинг автомобиля вряд ли можно считать завершенным, если неопрятный внешний вид выхлопной трубы глушителя портит визуальное восприятие ухоженного и стильного авто. 
+            p Качественный тюнинг автомобиля вряд ли можно считать завершенным, если неопрятный внешний вид выхлопной трубы глушителя портит визуальное восприятие ухоженного и стильного авто.
+            .shop-item__btn-wrap
+              button.btn-green В корзину
+              button.btn-red Купить в один клик
 
-          .shop__item
+          form.shop__item
             .shop__pic(style="background-image:url('assets/img/basket.jpg')")
+              a(href="#")
+            a(href="#").shop__title
+              |Насадка на глушитель d63мм NG-MT0103
+              br
+              |(NEW GALAXY)
+            .shop__item-price
+              |Цена:
+              span.old-price 880р.
+              span.new-price 800р.
+            p Качественный тюнинг автомобиля вряд ли можно считать завершенным, если неопрятный внешний вид выхлопной трубы глушителя портит визуальное восприятие ухоженного и стильного авто.
+            .shop-item__btn-wrap
+              button.btn-green В корзину
+              button.btn-red Купить в один клик
+
+          form.shop__item
+            .shop__pic(style="background-image:url('assets/img/basket.jpg')")
+              a(href="#")
             a(href="#").shop__title
               |Насадка на глушитель d63мм NG-MT0103
               br
@@ -75,7 +84,9 @@ block content
               span.old-price 880р.
               span.new-price 800р.
             p Качественный тюнинг автомобиля вряд ли можно считать завершенным, если неопрятный внешний вид выхлопной трубы глушителя портит визуальное восприятие ухоженного и стильного авто. 
-
+            .shop-item__btn-wrap
+              button.btn-green В корзину
+              button.btn-red Купить в один клик
 
 
         include ../elements/pagination
