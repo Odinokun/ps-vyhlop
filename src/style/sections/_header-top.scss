@@ -23,7 +23,78 @@
     text-indent: -9999px;
   }
 }
-
+.header-top__call-btn {
+  display: none;
+  @include max(840) {
+    display: block;
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+    margin-left: auto;
+  }
+  svg {
+    overflow: visible;
+    width: 27px;
+    height: 27px;
+    margin-left: 25px;
+    transition: fill .5s;
+    fill: $pur;
+    &:hover {
+      fill: $g2;
+    }
+  }
+}
+.header-top__contacts {
+  @include max(840) {
+    opacity: 0;
+    position: fixed;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 300px;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    pointer-events: none;
+    z-index: 100;
+    padding: 30px 20px;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    &.active {
+      display: inline-block;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+.header-top__contacts-row {
+  display: flex;
+  @include max(840) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      &::before {
+        display: none;
+      }
+    }
+    &::before {
+      height: 2px;
+      width: 70%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      right: 0;
+      background-color: $g2;
+      content: '';
+    }
+  }
+}
 .header__adress,
 .header__phone {
   font-family: $font-semibold;
@@ -36,60 +107,37 @@
 }
 .header__adress {
   font-size: 14px;
+  line-height: 20px;
   position: relative;
   display: inline-block;
-  padding-left: 30px;
+  padding: 0 10px 0 30px;
   background-image: url('../img/metro.png');
   background-repeat: no-repeat;
-  background-position: 0 50%;
-  background-size: contain;
-
-  @include max(1000) {
-    display: none;
-  }
-  &:hover {
-    &::before {
-      width: 0;
+  background-position: 0 0;
+  margin: 3px 0;
+    @include max(840) {
+      background-image: none;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
     }
-  }
-  &::before {
-    position: absolute;
-    right: 0;
-    // bottom: -5px;
-    bottom: 0;
-    left: 30px;
-    width: calc(100% - 30px);
-    height: 2px;
-    margin: auto;
-    content: '';
-    transition: all .5s;
-    background-color: #b4b4b9;
+  span {
+    @include max(840) {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
   }
 }
 .header__phone {
   font-size: 16px;
-
-  @include max(540) {
-    line-height: 0;
-    margin-left: auto;
-    text-indent: -9999px;
-  }
-  svg {
-    display: none;
-    overflow: visible;
-    width: 27px;
-    height: 27px;
-    margin-left: 25px;
-    transition: fill .5s;
-
-    fill: $pur;
-    @include max(540) {
-      display: block;
+  margin: 1px 0;
+  display: inline-block;
+  padding: 0 20px 0 10px;
+    @include max(840) {
+      font-size: 24px;
     }
-    &:hover {
-      fill: $g2;
-    }
-  }
 }
 
 .header-top__right {

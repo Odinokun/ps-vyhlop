@@ -1,6 +1,7 @@
 .menu {
   position: relative;
   background-color: #fff;
+  z-index: 1;
   &::before {
     position: absolute;
     right: 0;

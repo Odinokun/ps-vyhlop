@@ -44,6 +44,10 @@ $(function() {
   require('./modules/shop-one-slider')();
   // end   shop one slider
 
+  // begin popup
+  require('./modules/popup')();
+  // end popup
+
   /////
   // ***** END Standarts scripts *****
   /////

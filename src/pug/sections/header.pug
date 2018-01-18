@@ -1,14 +1,25 @@
 // begin header
 header.header
   .header-top.container-sm
+    .popup-header__layer
     a(href="#").header__logo
       img(src="assets/img/logo.png", alt="Выхлоп.рф")
       span Выхлоп.рф
-    a(href="tel:+7 812 640 33 36").header__phone +7 (812) 640-33-36
+    .header-top__call-btn#header-top__call-btn
       svg
         use(xlink:href="assets/img/sprite.svg#phone")
-    a(href="#" target="_blank" rel="nofollow noopener noreferrer").header__adress Молодёжный переулок, 2 лит А, Санкт-Петербург
-    
+    .header-top__contacts#header-top__contacts
+      .header-top__contacts-row
+        a(href="tel:+78127771886").header__phone +7 (812) 777-18-86
+        a(href="#" target="_blank" rel="nofollow noopener noreferrer").header__adress
+          |Розенштейна, 38
+          span м. Балтийская
+      .header-top__contacts-row
+        a(href="tel:+78127771889").header__phone +7 (812) 777-18-89
+        a(href="#" target="_blank" rel="nofollow noopener noreferrer").header__adress
+          |Брестский бульвар, 9А
+          span м. Ленинский проспект
+
     .header-top__right
       a(href="#").header__basket
         .header__basket-product

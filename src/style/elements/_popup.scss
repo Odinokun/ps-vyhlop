@@ -8,6 +8,16 @@
   display: none;
   background-color: rgba(0, 0, 0, .8);
 }
+.popup-header__layer {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, .8);
+}
 .popup {
   position: absolute;
   z-index: 100;
@@ -15,7 +25,6 @@
   left: 50%;
   display: none;
   // width: 300px;
-  padding: 50px 30px;
   padding: 15px 15px 0 15px;
   transform: translate(-50%, -50%);
   border: 2px solid #b4d6fb;
